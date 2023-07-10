@@ -1,0 +1,41 @@
+--env | grep ORACLE_HOME
+--/opt/oracle/dbs
+
+ALTER SESSION SET CONTAINER=CDB$ROOT;
+
+SELECT NAME, VALUE FROM V$PARAMETER WHERE NAME = 'open_cursors';
+
+--docker exec -t -i oracledb /bin/bash
+--/opt/oracle/dbs
+
+--docker exec -it oracledb sqlplus / as sysdba
+
+--create pfile='/tmp/initOrcl.ora' from spfile;
+
+CREATE PFILE = 'TRA_PFILE.ORA' FROM SPFILE = 'D:\OracleXE_APP\dbhomeXE\database\SPFILEXE.ORA';
+
+CREATE SPFILE = 'D:\OracleXE_APP\dbhomeXE\database\SPFILETEST.ORA' FROM PFILE = 'D:\OracleXE_APP\dbhomeXE\database\TRA_PFILE.ORA';
+
+SHOW PARAMETER OPEN_CURSORS;
+
+ALTER SYSTEM SET OPEN_CURSORS = 300;
+
+SHOW PARAMETER OPEN_CURSORS;
+
+SHOW PARAMETER CONTROL_FILES;
+
+SHOW PARAMETER SPFILE;
+
+--9?
+
+SELECT * FROM V$PASSWORDFILE_INFO;
+
+SELECT * FROM V$DIAG_INFO;
+
+--/opt/oracle/diag
+
+SELECT MESSAGE_TEXT FROM X$DBGALERTEXT WHERE MESSAGE_TEXT LIKE '%Current log%';
+
+
+
+--http://www.rebellionrider.com/how-to-read-control-file-in-oracle-database/    
