@@ -1,0 +1,43 @@
+CREATE TABLE TRA_t (
+ID NUMBER(3) PRIMARY KEY,
+name VARCHAR2(50)
+);
+
+INSERT INTO TRA_t VALUES (10, 'Andrey');
+INSERT INTO TRA_t VALUES (11, 'Dmitry');
+INSERT INTO TRA_t VALUES (12, 'Andrey');
+COMMIT;
+
+UPDATE TRA_t SET name = 'Alex' WHERE name = 'Andrey';
+COMMIT;
+
+SELECT ID, COUNT(name) FROM TRA_t
+WHERE ID < 12
+GROUP BY ID;
+
+SELECT * FROm TRA_t;
+
+DELETE FROM TRA_t WHERE ID = 12;
+ROLLBACK;
+
+CREATE TABLE TRA_t_child (
+person_ID NUMBER(3),
+phone_number VARCHAR2(20),
+CONSTRAINT PersonOrde_FK FOREIGN KEY (person_ID)
+REFERENCES TRA_t(ID)
+);
+
+INSERT INTO TRA_t_child VALUES (11, '+375291110202');
+INSERT INTO TRA_t_child VALUES (11, '+375441899001');
+
+SELECT TRA_t.ID, TRA_t_child.phone_number
+FROM TRA_t INNER JOIN TRA_t_child
+ON ID = person_ID;
+
+
+SELECT TRA_t.ID, TRA_t_child.phone_number
+FROM TRA_t LEFT OUTER JOIN TRA_t_child
+ON ID = person_ID;
+
+DROP TABLE TRA_t_child;
+DROP TABLE TRA_t;
