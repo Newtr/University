@@ -57,7 +57,7 @@ namespace _2_Lab
             MyAuthor.ID = Convert.ToInt32(numericUpDown1.Text);
             MyAuthor.age= Convert.ToInt32(numericUpDown2.Text);
             XmlSerializer xml_Formatter = new XmlSerializer(typeof(Author));
-            using (FileStream FS = new FileStream("D://Документы БГТУ//1.ООП//2 Lab//2 Lab//2 Lab//XML_Ser.xml", FileMode.OpenOrCreate))
+            using (FileStream FS = new FileStream("D://Документы БГТУ//1.ООП//3 Lab//2 Lab//2 Lab//XML_Ser.xml", FileMode.OpenOrCreate))
             {
                 xml_Formatter.Serialize(FS, MyAuthor);
 

@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Документы БГТУ\\1.ООП\\2 Lab\\2 Lab\\2 Lab\\2 Lab.csproj",
+      "projectUniqueName": "D:\\Документы БГТУ\\1.ООП\\3 Lab\\2 Lab\\2 Lab\\2 Lab.csproj",
       "projectName": "2 Lab",
-      "projectPath": "D:\\Документы БГТУ\\1.ООП\\2 Lab\\2 Lab\\2 Lab\\2 Lab.csproj",
+      "projectPath": "D:\\Документы БГТУ\\1.ООП\\3 Lab\\2 Lab\\2 Lab\\2 Lab.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "D:\\Документы БГТУ\\1.ООП\\2 Lab\\2 Lab\\2 Lab\\obj\\",
+      "outputPath": "D:\\Документы БГТУ\\1.ООП\\3 Lab\\2 Lab\\2 Lab\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",

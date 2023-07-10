@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.Book_Info_Label = new System.Windows.Forms.Label();
             this.Book_Size_Label = new System.Windows.Forms.Label();
             this.Book_Type_Label = new System.Windows.Forms.Label();
@@ -50,8 +52,28 @@
             this.Artistic_RadioButton = new System.Windows.Forms.RadioButton();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.Info_Box = new System.Windows.Forms.ListBox();
+            this.Search_textbox = new System.Windows.Forms.TextBox();
+            this.Search_button = new System.Windows.Forms.Button();
+            this.sort_by_name = new System.Windows.Forms.Button();
+            this.sort_by_date = new System.Windows.Forms.Button();
+            this.Tool_bar = new System.Windows.Forms.ToolStrip();
+            this.toolStripTextBox1 = new System.Windows.Forms.ToolStripTextBox();
+            this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
+            this.Vpered = new System.Windows.Forms.ToolStripButton();
+            this.Nazad = new System.Windows.Forms.ToolStripButton();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.Last_Move = new System.Windows.Forms.ListBox();
             ((System.ComponentModel.ISupportInitialize)(this.Count_Of_Page_numericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Year_Of_Creating_numericUpDown)).BeginInit();
+            this.Tool_bar.SuspendLayout();
             this.SuspendLayout();
             // 
             // Book_Info_Label
@@ -231,9 +253,9 @@
             // 
             // Add_Author_button
             // 
-            this.Add_Author_button.Location = new System.Drawing.Point(422, 607);
+            this.Add_Author_button.Location = new System.Drawing.Point(422, 605);
             this.Add_Author_button.Name = "Add_Author_button";
-            this.Add_Author_button.Size = new System.Drawing.Size(94, 104);
+            this.Add_Author_button.Size = new System.Drawing.Size(94, 106);
             this.Add_Author_button.TabIndex = 18;
             this.Add_Author_button.Text = "Добавить";
             this.Add_Author_button.UseVisualStyleBackColor = true;
@@ -293,11 +315,220 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(892, 100);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(156, 77);
+            this.button3.TabIndex = 27;
+            this.button3.Text = "О программе";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // Info_Box
+            // 
+            this.Info_Box.FormattingEnabled = true;
+            this.Info_Box.HorizontalScrollbar = true;
+            this.Info_Box.ItemHeight = 20;
+            this.Info_Box.Location = new System.Drawing.Point(619, 404);
+            this.Info_Box.Name = "Info_Box";
+            this.Info_Box.Size = new System.Drawing.Size(1143, 304);
+            this.Info_Box.TabIndex = 28;
+            this.Info_Box.SelectedIndexChanged += new System.EventHandler(this.Info_Box_SelectedIndexChanged);
+            // 
+            // Search_textbox
+            // 
+            this.Search_textbox.Location = new System.Drawing.Point(618, 728);
+            this.Search_textbox.Name = "Search_textbox";
+            this.Search_textbox.Size = new System.Drawing.Size(190, 27);
+            this.Search_textbox.TabIndex = 29;
+            // 
+            // Search_button
+            // 
+            this.Search_button.Location = new System.Drawing.Point(833, 728);
+            this.Search_button.Name = "Search_button";
+            this.Search_button.Size = new System.Drawing.Size(94, 29);
+            this.Search_button.TabIndex = 30;
+            this.Search_button.Text = "Поиск";
+            this.Search_button.UseVisualStyleBackColor = true;
+            this.Search_button.Click += new System.EventHandler(this.Search_button_Click);
+            // 
+            // sort_by_name
+            // 
+            this.sort_by_name.Location = new System.Drawing.Point(955, 728);
+            this.sort_by_name.Name = "sort_by_name";
+            this.sort_by_name.Size = new System.Drawing.Size(207, 29);
+            this.sort_by_name.TabIndex = 31;
+            this.sort_by_name.Text = "сортировка по названию";
+            this.sort_by_name.UseVisualStyleBackColor = true;
+            this.sort_by_name.Click += new System.EventHandler(this.sort_by_name_Click);
+            // 
+            // sort_by_date
+            // 
+            this.sort_by_date.Location = new System.Drawing.Point(1186, 728);
+            this.sort_by_date.Name = "sort_by_date";
+            this.sort_by_date.Size = new System.Drawing.Size(207, 29);
+            this.sort_by_date.TabIndex = 32;
+            this.sort_by_date.Text = "сортировка по дате";
+            this.sort_by_date.UseVisualStyleBackColor = true;
+            this.sort_by_date.Click += new System.EventHandler(this.sort_by_date_Click);
+            // 
+            // Tool_bar
+            // 
+            this.Tool_bar.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.Tool_bar.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.Tool_bar.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripTextBox1,
+            this.toolStripButton3,
+            this.toolStripButton1,
+            this.toolStripButton2,
+            this.toolStripButton4,
+            this.Vpered,
+            this.Nazad});
+            this.Tool_bar.Location = new System.Drawing.Point(0, 0);
+            this.Tool_bar.Name = "Tool_bar";
+            this.Tool_bar.Size = new System.Drawing.Size(1789, 27);
+            this.Tool_bar.TabIndex = 33;
+            this.Tool_bar.Text = "toolStrip1";
+            // 
+            // toolStripTextBox1
+            // 
+            this.toolStripTextBox1.ForeColor = System.Drawing.Color.Black;
+            this.toolStripTextBox1.Name = "toolStripTextBox1";
+            this.toolStripTextBox1.Size = new System.Drawing.Size(100, 27);
+            this.toolStripTextBox1.Text = "Поиск";
+            this.toolStripTextBox1.Click += new System.EventHandler(this.toolStripTextBox1_Click);
+            // 
+            // toolStripButton3
+            // 
+            this.toolStripButton3.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.toolStripButton3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.toolStripButton3.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton3.Image")));
+            this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton3.Name = "toolStripButton3";
+            this.toolStripButton3.Size = new System.Drawing.Size(60, 24);
+            this.toolStripButton3.Text = "Искать";
+            this.toolStripButton3.Click += new System.EventHandler(this.toolStripButton3_Click);
+            // 
+            // toolStripButton1
+            // 
+            this.toolStripButton1.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
+            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton1.Name = "toolStripButton1";
+            this.toolStripButton1.Size = new System.Drawing.Size(192, 24);
+            this.toolStripButton1.Text = "Сортировка по названию";
+            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
+            // 
+            // toolStripButton2
+            // 
+            this.toolStripButton2.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.toolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.toolStripButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton2.Image")));
+            this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton2.Name = "toolStripButton2";
+            this.toolStripButton2.Size = new System.Drawing.Size(152, 24);
+            this.toolStripButton2.Text = "Сортировка по дате";
+            this.toolStripButton2.Click += new System.EventHandler(this.toolStripButton2_Click);
+            // 
+            // toolStripButton4
+            // 
+            this.toolStripButton4.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.toolStripButton4.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.toolStripButton4.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton4.Image")));
+            this.toolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton4.Name = "toolStripButton4";
+            this.toolStripButton4.Size = new System.Drawing.Size(77, 24);
+            this.toolStripButton4.Text = "Очистить";
+            this.toolStripButton4.Click += new System.EventHandler(this.toolStripButton4_Click);
+            // 
+            // Vpered
+            // 
+            this.Vpered.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.Vpered.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.Vpered.Image = ((System.Drawing.Image)(resources.GetObject("Vpered.Image")));
+            this.Vpered.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.Vpered.Name = "Vpered";
+            this.Vpered.Size = new System.Drawing.Size(64, 24);
+            this.Vpered.Text = "Вперед";
+            this.Vpered.Click += new System.EventHandler(this.toolStripButton5_Click);
+            // 
+            // Nazad
+            // 
+            this.Nazad.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.Nazad.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.Nazad.Image = ((System.Drawing.Image)(resources.GetObject("Nazad.Image")));
+            this.Nazad.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.Nazad.Name = "Nazad";
+            this.Nazad.Size = new System.Drawing.Size(55, 24);
+            this.Nazad.Text = "Назад";
+            this.Nazad.Click += new System.EventHandler(this.Nazad_Click);
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Location = new System.Drawing.Point(1660, 30);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(68, 24);
+            this.radioButton1.TabIndex = 34;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "Выкл.";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Location = new System.Drawing.Point(1660, 66);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(57, 24);
+            this.radioButton2.TabIndex = 35;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "Вкл.";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Location = new System.Drawing.Point(1492, 114);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(285, 63);
+            this.richTextBox1.TabIndex = 36;
+            this.richTextBox1.Text = "";
+            // 
+            // Last_Move
+            // 
+            this.Last_Move.FormattingEnabled = true;
+            this.Last_Move.ItemHeight = 20;
+            this.Last_Move.Location = new System.Drawing.Point(1381, 197);
+            this.Last_Move.Name = "Last_Move";
+            this.Last_Move.Size = new System.Drawing.Size(396, 44);
+            this.Last_Move.TabIndex = 37;
+            this.Last_Move.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1541, 753);
+            this.ClientSize = new System.Drawing.Size(1789, 857);
+            this.Controls.Add(this.Last_Move);
+            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.radioButton2);
+            this.Controls.Add(this.radioButton1);
+            this.Controls.Add(this.Tool_bar);
+            this.Controls.Add(this.sort_by_date);
+            this.Controls.Add(this.sort_by_name);
+            this.Controls.Add(this.Search_button);
+            this.Controls.Add(this.Search_textbox);
+            this.Controls.Add(this.Info_Box);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.Artistic_RadioButton);
@@ -322,8 +553,11 @@
             this.Controls.Add(this.Book_Info_Label);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Count_Of_Page_numericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Year_Of_Creating_numericUpDown)).EndInit();
+            this.Tool_bar.ResumeLayout(false);
+            this.Tool_bar.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -353,6 +587,25 @@
         private RadioButton Artistic_RadioButton;
         private Button button1;
         private Button button2;
+        private Button button3;
+        private ListBox Info_Box;
+        private TextBox Search_textbox;
+        private Button Search_button;
+        private Button sort_by_name;
+        private Button sort_by_date;
+        private ToolStrip Tool_bar;
+        private ToolStripTextBox toolStripTextBox1;
+        private ToolStripButton toolStripButton1;
+        private ToolStripButton toolStripButton2;
+        private ToolStripButton toolStripButton3;
+        private RadioButton radioButton1;
+        private RadioButton radioButton2;
+        private ToolStripButton toolStripButton4;
+        private ToolStripButton Vpered;
+        private ToolStripButton Nazad;
+        private System.Windows.Forms.Timer timer1;
+        private RichTextBox richTextBox1;
+        private ListBox Last_Move;
     }
    
 }
