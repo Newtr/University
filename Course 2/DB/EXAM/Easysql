@@ -1,0 +1,177 @@
+alter session set "_ORACLE_SCRIPT"=true; 
+
+--1.	Определите размеры областей памяти SGA
+SHOW SGA;
+--2.	Получите список всех параметров экземпляра. 
+SHOW PARAMETER spfile;
+
+SELECT name, value
+FROM v$parameter;
+
+SELECT * FROM V$PARAMETER;
+
+SELECT * FROM V$PARAMETER;
+--3.	Получите список управляющих файлов. 
+SHOW PARAMETER control_files;
+
+SELECT *
+FROM v$controlfile;
+--4.	Сформируйте PFILE.
+CREATE PFILE = 'TRA_PFILE2.ORA' FROM SPFILE = 'D:\OracleXE_APP\dbhomeXE\database\SPFILEXE.ORA';
+--5.	Создайте таблицу из двух столбцов, один из которых первичный ключ. Получите перечень всех сегментов. Вставьте данные в таблицу. Определите, сколько в сегменте таблицы экстентов, их размер в блоках и байтах. 
+
+    --Создание таблицы с двумя столбцами, включая первичный ключ:
+    CREATE TABLE my_table (
+    id NUMBER PRIMARY KEY,
+    data VARCHAR2(100)
+    );
+    --Получение перечня всех сегментов:
+    SELECT segment_name, segment_type
+    FROM user_segments;
+    --Вставка данных в таблицу:
+    INSERT INTO my_table (id, data)
+    VALUES (1, 'Data 1');
+
+    INSERT INTO my_table (id, data)
+    VALUES (2, 'Data 2');
+    --Определение количества экстентов и их размера в блоках и байтах для сегмента таблицы:
+    SELECT segment_name, extent_id, blocks, bytes
+    FROM user_extents
+    WHERE segment_name = 'MY_TABLE';
+--6.	Получите перечень всех процессов СУБД Oracle. Для серверных процессов укажите режим подключения. Для фоновых укажите работающие в настоящий момент.
+SELECT sid, serial#, username, program, status, type
+FROM v$session;
+
+SELECT sid, serial#, username, program, status, type, server
+FROM v$session;
+
+SELECT sid, serial#, username, program, status, type
+FROM v$session
+WHERE type = 'BACKGROUND' AND status = 'ACTIVE';
+--7.	Получите перечень всех табличных пространств и их файлов
+SELECT tablespace_name, file_name
+FROM dba_data_files;
+--8.	Получите перечень всех ролей.
+SELECT role
+FROM dba_roles;
+--9.	Получите перечень привилегий для определенной роли. 
+SELECT privilege
+FROM dba_sys_privs
+WHERE grantee = 'SYS';
+SELECT * FROM dba_role_privs;
+--10.	Получите перечень всех пользователей.
+SELECT username
+FROM dba_users;
+--11.	Создайте роль.
+CREATE ROLE test_role;
+--12.	Создайте пользователя.
+CREATE USER Test_User IDENTIFIED BY pass;
+--13.	Получите перечень всех профилей безопасности.
+SELECT profile
+FROM dba_profiles;
+--14.	Получите перечень всех параметров профиля безопасности.
+SELECT profile, resource_name, limit
+FROM dba_profiles;
+--15.	Создайте профиль безопасности.
+CREATE PROFILE TestProfile LIMIT SESSIONS_PER_USER 5 CPU_PER_SESSION 1000;
+--16.	Создайте последовательность S1, со следующими характеристиками: начальное значение 1000; приращение 10; минимальное значение 0; максимальное значение 10000; циклическую; кэширующую 30 значений в памяти; гарантирующую хронологию значений. Создайте таблицу T1 с тремя столбцами и введите (INSERT) 10 строк, со значениями из S1.
+CREATE SEQUENCE S1
+  START WITH 1000
+  INCREMENT BY 10
+  MINVALUE 0
+  MAXVALUE 10000
+  CYCLE
+  CACHE 30
+  ORDER;
+
+CREATE TABLE T1 (
+  ID NUMBER,
+  COLUMN1 VARCHAR2(50),
+  COLUMN2 NUMBER
+);
+
+INSERT INTO T1 (ID, COLUMN1, COLUMN2)
+SELECT S1.NEXTVAL, 'Value ' || S1.CURRVAL, S1.CURRVAL
+FROM dual
+CONNECT BY level <= 10;
+--17.	Создайте частный и публичный синоним для одной из таблиц и продемонстрируйте его область видимости. Найдите созданные синонимы в представлениях словаря Oracle.
+CREATE SYNONYM private_synonym_name FOR T1;
+
+CREATE PUBLIC SYNONYM public_synonym_name FOR T1;
+
+SELECT synonym_name
+FROM ALL_SYNONYMS WHERE TABLE_OWNER = 'SYS';
+
+SELECT * FROM ALL_SYNONYMS WHERE TABLE_NAME = 'T1';
+--18.	Получите перечень всех файлов групп журналов повтора. 
+SELECT GROUP#, MEMBER
+FROM V$LOGFILE;
+--19.	Определите текущую группу журналов повтора. 
+SELECT GROUP#, THREAD#, SEQUENCE#
+FROM V$LOG
+WHERE STATUS = 'CURRENT';
+--20.	Получите перечень контрольных файлов.
+SELECT NAME
+FROM V$CONTROLFILE;
+--21.	Получите список сегментов табличного пространства. 
+SELECT TABLESPACE_NAME
+FROM DBA_TABLESPACES;
+
+SELECT SEGMENT_NAME, SEGMENT_TYPE
+FROM DBA_SEGMENTS
+WHERE TABLESPACE_NAME = 'SYSTEM';
+--22.	Выведите список всех объектов, доступных пользователю. 
+SELECT OWNER, OBJECT_NAME, OBJECT_TYPE
+FROM DBA_OBJECTS
+WHERE OWNER = 'SYS';
+--23.	Вычислите количество блоков, занятых таблицей.
+SELECT BLOCKS
+FROM DBA_TABLES
+WHERE TABLE_NAME = 'T1';
+--24.	Выведите список текущих сессий. 
+SELECT SID, SERIAL#, USERNAME, STATUS
+FROM V$SESSION;
+--25.	Выведите, производится ли архивирование журналов повтора.
+SELECT DEST_ID, DEST_NAME, STATUS, ARCHIVED_THREAD#, APPLIED_THREAD#
+FROM V$ARCHIVE_DEST_STATUS;
+
+SELECT log_mode
+FROM v$database;
+
+--26.	Создайте представление с определенными параметрами.
+CREATE OR REPLACE VIEW Test_View (office)
+AS
+SELECT o.office
+FROM offices o
+JOIN salesreps s ON o.office = s.rep_office;
+
+SELECT *
+FROM Test_View
+WHERE office = 12;
+
+--27.	Создайте database link с определенными параметрами.
+CREATE DATABASE LINK my_link
+   CONNECT TO remote_user
+   IDENTIFIED BY remote_password
+   USING 'remote_service_name';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
