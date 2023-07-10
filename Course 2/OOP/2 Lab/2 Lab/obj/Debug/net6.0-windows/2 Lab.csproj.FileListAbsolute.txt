@@ -1,0 +1,20 @@
+D:\Документы БГТУ\1.ООП\2 Lab\2 Lab\2 Lab\obj\Debug\net6.0-windows\2 Lab.csproj.AssemblyReference.cache
+D:\Документы БГТУ\1.ООП\2 Lab\2 Lab\2 Lab\obj\Debug\net6.0-windows\_2_Lab.Form1.resources
+D:\Документы БГТУ\1.ООП\2 Lab\2 Lab\2 Lab\obj\Debug\net6.0-windows\2 Lab.csproj.GenerateResource.cache
+D:\Документы БГТУ\1.ООП\2 Lab\2 Lab\2 Lab\obj\Debug\net6.0-windows\2 Lab.GeneratedMSBuildEditorConfig.editorconfig
+D:\Документы БГТУ\1.ООП\2 Lab\2 Lab\2 Lab\obj\Debug\net6.0-windows\2 Lab.AssemblyInfoInputs.cache
+D:\Документы БГТУ\1.ООП\2 Lab\2 Lab\2 Lab\obj\Debug\net6.0-windows\2 Lab.AssemblyInfo.cs
+D:\Документы БГТУ\1.ООП\2 Lab\2 Lab\2 Lab\obj\Debug\net6.0-windows\2 Lab.csproj.CoreCompileInputs.cache
+D:\Документы БГТУ\1.ООП\2 Lab\2 Lab\2 Lab\bin\Debug\net6.0-windows\2 Lab.exe
+D:\Документы БГТУ\1.ООП\2 Lab\2 Lab\2 Lab\bin\Debug\net6.0-windows\2 Lab.deps.json
+D:\Документы БГТУ\1.ООП\2 Lab\2 Lab\2 Lab\bin\Debug\net6.0-windows\2 Lab.runtimeconfig.json
+D:\Документы БГТУ\1.ООП\2 Lab\2 Lab\2 Lab\bin\Debug\net6.0-windows\2 Lab.dll
+D:\Документы БГТУ\1.ООП\2 Lab\2 Lab\2 Lab\bin\Debug\net6.0-windows\2 Lab.pdb
+D:\Документы БГТУ\1.ООП\2 Lab\2 Lab\2 Lab\obj\Debug\net6.0-windows\2 Lab.dll
+D:\Документы БГТУ\1.ООП\2 Lab\2 Lab\2 Lab\obj\Debug\net6.0-windows\refint\2 Lab.dll
+D:\Документы БГТУ\1.ООП\2 Lab\2 Lab\2 Lab\obj\Debug\net6.0-windows\2 Lab.pdb
+D:\Документы БГТУ\1.ООП\2 Lab\2 Lab\2 Lab\obj\Debug\net6.0-windows\2 Lab.genruntimeconfig.cache
+D:\Документы БГТУ\1.ООП\2 Lab\2 Lab\2 Lab\obj\Debug\net6.0-windows\ref\2 Lab.dll
+D:\Документы БГТУ\1.ООП\2 Lab\2 Lab\2 Lab\obj\Debug\net6.0-windows\_2_Lab.Form2.resources
+D:\Документы БГТУ\1.ООП\2 Lab\2 Lab\2 Lab\obj\Debug\net6.0-windows\_2_Lab.Properties.Resources.resources
+D:\Документы БГТУ\1.ООП\2 Lab\2 Lab\2 Lab\obj\Debug\net6.0-windows\_2_Lab.Form3.resources
