@@ -1,0 +1,3 @@
+﻿  ClientS.cpp
+D:\Документы БГТУ\3.ПСП\5 Lab\Lab_5MS\ClientS\ClientS\ClientS.cpp(29): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+  ClientS.vcxproj -> D:\Документы БГТУ\3.ПСП\5 Lab\Lab_5MS\ClientS\x64\Debug\ClientS.exe
