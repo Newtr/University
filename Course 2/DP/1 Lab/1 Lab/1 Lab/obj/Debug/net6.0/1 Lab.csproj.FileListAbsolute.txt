@@ -1,0 +1,15 @@
+D:\Документы БГТУ\4.ПП\1 Lab\1 Lab\1 Lab\obj\Debug\net6.0\1 Lab.csproj.AssemblyReference.cache
+D:\Документы БГТУ\4.ПП\1 Lab\1 Lab\1 Lab\obj\Debug\net6.0\1 Lab.GeneratedMSBuildEditorConfig.editorconfig
+D:\Документы БГТУ\4.ПП\1 Lab\1 Lab\1 Lab\obj\Debug\net6.0\1 Lab.AssemblyInfoInputs.cache
+D:\Документы БГТУ\4.ПП\1 Lab\1 Lab\1 Lab\obj\Debug\net6.0\1 Lab.AssemblyInfo.cs
+D:\Документы БГТУ\4.ПП\1 Lab\1 Lab\1 Lab\obj\Debug\net6.0\1 Lab.csproj.CoreCompileInputs.cache
+D:\Документы БГТУ\4.ПП\1 Lab\1 Lab\1 Lab\bin\Debug\net6.0\1 Lab.exe
+D:\Документы БГТУ\4.ПП\1 Lab\1 Lab\1 Lab\bin\Debug\net6.0\1 Lab.deps.json
+D:\Документы БГТУ\4.ПП\1 Lab\1 Lab\1 Lab\bin\Debug\net6.0\1 Lab.runtimeconfig.json
+D:\Документы БГТУ\4.ПП\1 Lab\1 Lab\1 Lab\bin\Debug\net6.0\1 Lab.dll
+D:\Документы БГТУ\4.ПП\1 Lab\1 Lab\1 Lab\bin\Debug\net6.0\1 Lab.pdb
+D:\Документы БГТУ\4.ПП\1 Lab\1 Lab\1 Lab\obj\Debug\net6.0\1 Lab.dll
+D:\Документы БГТУ\4.ПП\1 Lab\1 Lab\1 Lab\obj\Debug\net6.0\refint\1 Lab.dll
+D:\Документы БГТУ\4.ПП\1 Lab\1 Lab\1 Lab\obj\Debug\net6.0\1 Lab.pdb
+D:\Документы БГТУ\4.ПП\1 Lab\1 Lab\1 Lab\obj\Debug\net6.0\1 Lab.genruntimeconfig.cache
+D:\Документы БГТУ\4.ПП\1 Lab\1 Lab\1 Lab\obj\Debug\net6.0\ref\1 Lab.dll
