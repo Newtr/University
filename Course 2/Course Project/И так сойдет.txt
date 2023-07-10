@@ -1,0 +1,48 @@
+Список режиссеров: 
+Christopher Nolan
+Quentin Tarantino
+Martin Scorsese
+Steven Spielberg
+Stanley Kubrick
+Alfred Hitchcock
+David Fincher
+Francis Ford Coppola
+Woody Allen
+Tim Burton
+Ang Lee
+Peter Jackson
+Ridley Scott
+Guillermo del Toro
+James Cameron
+Список фильмов:
+'The Matrix'
+'Jurassic Park'
+'The Godfather'
+'The Shawshank Redemption'
+'Forrest Gump'
+'Pulp Fiction'
+'The Silence of the Lambs'
+'The Lord of the Rings: The Fellowship of the Ring'
+'Fight Club'
+'Inception'
+'Interstellar'
+'The Dark Knight'
+'The Green Mile'
+'The Prestige'
+'The Departed'
+Список актеров:
+John Doe
+Jane Smith
+Michael Johnson
+Emily Davis
+David Wilson
+Sarah Thompson
+Robert Lee
+Jennifer Brown
+Daniel Miller
+Olivia Wilson
+Matthew Taylor
+Emma Martinez
+William Anderson
+Sophia Hernandez
+James Garcia
