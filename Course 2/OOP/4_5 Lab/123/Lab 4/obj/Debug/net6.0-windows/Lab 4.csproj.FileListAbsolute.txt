@@ -1,0 +1,21 @@
+D:\Документы БГТУ\1.ООП\4_5 Lab\123\Lab 4\obj\Debug\net6.0-windows\Lab 4.csproj.AssemblyReference.cache
+D:\Документы БГТУ\1.ООП\4_5 Lab\123\Lab 4\obj\Debug\net6.0-windows\Locales\LocaleEN.baml
+D:\Документы БГТУ\1.ООП\4_5 Lab\123\Lab 4\obj\Debug\net6.0-windows\Locales\LocaleRU.baml
+D:\Документы БГТУ\1.ООП\4_5 Lab\123\Lab 4\obj\Debug\net6.0-windows\Theme\BorderStyle.baml
+D:\Документы БГТУ\1.ООП\4_5 Lab\123\Lab 4\obj\Debug\net6.0-windows\Theme\ButtonStyle.baml
+D:\Документы БГТУ\1.ООП\4_5 Lab\123\Lab 4\obj\Debug\net6.0-windows\Theme\CheckBoxStyle.baml
+D:\Документы БГТУ\1.ООП\4_5 Lab\123\Lab 4\obj\Debug\net6.0-windows\Theme\RadioButtonStyle.baml
+D:\Документы БГТУ\1.ООП\4_5 Lab\123\Lab 4\obj\Debug\net6.0-windows\Theme\TextBlockApp.baml
+D:\Документы БГТУ\1.ООП\4_5 Lab\123\Lab 4\obj\Debug\net6.0-windows\Theme\TextBlockHeaderStyle.baml
+D:\Документы БГТУ\1.ООП\4_5 Lab\123\Lab 4\obj\Debug\net6.0-windows\Theme\TextBlockProductPrice.baml
+D:\Документы БГТУ\1.ООП\4_5 Lab\123\Lab 4\obj\Debug\net6.0-windows\Theme\TextBlockProductTitle.baml
+D:\Документы БГТУ\1.ООП\4_5 Lab\123\Lab 4\obj\Debug\net6.0-windows\Theme\TextBlockSubheaderStyle.baml
+D:\Документы БГТУ\1.ООП\4_5 Lab\123\Lab 4\obj\Debug\net6.0-windows\Theme\TextBoxStyle.baml
+D:\Документы БГТУ\1.ООП\4_5 Lab\123\Lab 4\obj\Debug\net6.0-windows\MVVM\View\AddProductView.g.cs
+D:\Документы БГТУ\1.ООП\4_5 Lab\123\Lab 4\obj\Debug\net6.0-windows\MVVM\View\EditProductView.g.cs
+D:\Документы БГТУ\1.ООП\4_5 Lab\123\Lab 4\obj\Debug\net6.0-windows\MVVM\View\ProductsView.g.cs
+D:\Документы БГТУ\1.ООП\4_5 Lab\123\Lab 4\obj\Debug\net6.0-windows\App.g.cs
+D:\Документы БГТУ\1.ООП\4_5 Lab\123\Lab 4\obj\Debug\net6.0-windows\Lab 4_Content.g.cs
+D:\Документы БГТУ\1.ООП\4_5 Lab\123\Lab 4\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
+D:\Документы БГТУ\1.ООП\4_5 Lab\123\Lab 4\obj\Debug\net6.0-windows\Lab 4_MarkupCompile.cache
+D:\Документы БГТУ\1.ООП\4_5 Lab\123\Lab 4\obj\Debug\net6.0-windows\Lab 4_MarkupCompile.lref

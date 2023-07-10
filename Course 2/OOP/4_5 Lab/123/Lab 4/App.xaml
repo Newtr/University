@@ -1,0 +1,39 @@
+﻿<Application x:Class="Lab_4.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Lab_4"
+             xmlns:viewModel="clr-namespace:Lab_4.MVVM.ViewModel"
+             xmlns:view="clr-namespace:Lab_4.MVVM.View"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary x:Name="LocaleDictionary">
+                    <ResourceDictionary.MergedDictionaries>
+                        <ResourceDictionary Source="Locales/LocaleEN.xaml"/>
+                    </ResourceDictionary.MergedDictionaries>
+                </ResourceDictionary>
+                <ResourceDictionary Source="Theme/TextBoxStyle.xaml"/>
+                <ResourceDictionary Source="Theme/ButtonStyle.xaml"/>
+                <ResourceDictionary Source="Theme/BorderStyle.xaml"/> 
+                <ResourceDictionary Source="Theme/RadioButtonStyle.xaml"/>
+                <ResourceDictionary Source="Theme/CheckBoxStyle.xaml"/>
+                <ResourceDictionary Source="Theme/TextBlockHeaderStyle.xaml"/>
+                <ResourceDictionary Source="Theme/TextBlockSubheaderStyle.xaml"/>
+                <ResourceDictionary Source="Theme/TextBlockProductTitle.xaml"/>
+                <ResourceDictionary Source="Theme/TextBlockProductPrice.xaml"/>
+                <ResourceDictionary Source="Theme/TextBlockApp.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+
+            <DataTemplate DataType="{x:Type viewModel:ProductViewModel}"> 
+                <view:ProductsView/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type viewModel:AddProductViewModel}">
+                <view:AddProductView/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type viewModel:EditProductViewModel}">
+                <view:EditProductView/>
+            </DataTemplate>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
