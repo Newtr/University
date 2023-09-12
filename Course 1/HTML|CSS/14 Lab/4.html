@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4</title>
+</head>
+<body>
+    <svg width="600" height="600">
+        <rect fill="linen" width="100%" height="100%" />
+        <style>
+            .col-1{fill:aqua}
+            .col-2{fill:green}
+            .col-3{fill:red}
+            .col-4{fill:yellow}
+            .col-5{fill:purple}
+        </style>
+        <defs>
+            <path id="bubble" d="M50 6.25c27.614 0 50 18.188 50 40.625 0 22.437-22.386 40.625-50 40.625-2.652 0-5.255-0.169-7.795-0.493-10.74 10.74-23.56 12.666-35.955 12.949v-2.629c6.693-3.279 12.5-9.252 12.5-16.078 0-0.953-0.074-1.888-0.211-2.802-11.308-7.448-18.539-18.824-18.539-31.573 0-22.437 22.386-40.625 50-40.625z"/>
+        </defs>
+        <use xlink:href="#bubble" class="col-1" x="100" y="0" transform="rotate(90 36 16)" />
+        <use xlink:href="#bubble" class="col-2" x="110" y="0" transform="rotate(30 36 16)"/>
+        <use xlink:href="#bubble" class="col-3" x="220" y="0" transform="rotate(45 70 60)"/>
+        <use xlink:href="#bubble" class="col-4" x="330" y="0" transform="rotate(10 36 16)"/>
+        <use xlink:href="#bubble" class="col-5" x="450" y="0" transform="rotate(50 300 16)"/>
+    </svg>
+</body>
+</html>
