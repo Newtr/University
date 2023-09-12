@@ -1,0 +1,14 @@
+ul.gor_nav{
+    list-style-type: none;
+}
+.gor_nav li{
+    display: inline;
+    text-align: center;
+}
+.gor_nav a{
+    border: 1px solid black;
+    padding: 5px 15px 15px 15px;
+    background-color: yellow;
+    text-decoration: none;
+    color: blue;
+}

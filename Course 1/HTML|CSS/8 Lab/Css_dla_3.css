@@ -1,0 +1,28 @@
+ul.nav {
+    list-style-type: none;
+    font-size: 10px;
+    text-align: left;
+}    
+ul .nav a{
+    display: block;
+}
+a{
+    text-decoration: none;
+}
+a:active{color:black}
+a:visited{color: black;}
+a:hover{color: navy;}
+li:nth-child(1){
+    background-color: yellow;
+    width: 200px;
+    border: 1px solid black;
+    height: 30px;
+    padding: 2px 2px;
+}
+li:nth-child(n+2){
+    background-color: orange;
+    width: 100px;
+    border: 1px dashed black;
+    height: 30px;
+    padding: 2px 2px;
+}

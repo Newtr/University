@@ -1,0 +1,26 @@
+ul.vert_nav{
+    list-style-type: none;
+}
+ul.vert_nav a{
+    display: block;
+    text-align: center;
+    margin-left: 0%;
+}
+a{
+    border: 1px solid black;
+    width: 100px;
+    margin: 2px;
+}
+li:nth-child(1) a:link{
+    color: red;
+    text-decoration: none;
+}
+li:nth-child(2) a:visited{
+    color: #8B0000;
+}
+li:nth-child(3) a:hover{
+    color: green;
+}
+li:nth-child(4) a:active{
+    color: rgb(184, 134, 11);
+}

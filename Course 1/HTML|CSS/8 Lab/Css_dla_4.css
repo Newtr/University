@@ -1,0 +1,16 @@
+.nav li { display: inline; }
+a{
+    text-decoration: none;
+}
+.nav a {
+    display: inline-block;
+    border: 1px solid black;
+    padding: 5px 15px 5px 30px;
+    text-decoration: none;
+    width: 100px;
+    } 
+.nav li a {background: url(facultet.png) no-repeat 0 0;}
+.nav .IT a:hover {background-position: 0 -30px;} 
+.nav .pim a:hover {background-position: 0 -90px;}  
+.nav .htit a:hover {background-position: 0 -60px;} 
+
