@@ -1,0 +1,26 @@
+@keyframes fade {
+    0% { opacity: 0; }
+    11.11% { opacity: 1; }
+    33.33% { opacity: 1; }
+    44.44% { opacity: 0; }
+    100% { opacity: 0; }
+  }
+  
+  .fadein { position:relative; width:20%;}
+  .fadein img { position:absolute; width:100%; left:0; right:0; opacity:0; animation-name: fade; animation-duration: 9s; animation-iteration-count: infinite; }
+  .fadein img:nth-child(1) { animation-delay: 0s; }
+  .fadein img:nth-child(2) { animation-delay: 3s; }
+  .fadein img:nth-child(3) { animation-delay: 6s; }
+  .fadein img:nth-child(4) { animation-delay: 9s; }
+@keyframes hhh {
+    0% {opacity: 0%;}
+    100%{opacity: 80%;}
+    }
+    h1{
+        position: relative;
+        animation-name: hhh;
+        animation-duration: 8s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+    

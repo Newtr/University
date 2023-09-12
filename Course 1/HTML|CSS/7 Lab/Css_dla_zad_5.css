@@ -1,0 +1,64 @@
+img{
+    width: 50px;
+}
+@keyframes left_pic {
+        0% {left: 0px;}
+        100%{left: 200px;}
+        }
+        #first { 
+        margin-top: 10px;
+        position: relative;
+        animation: left_pic 4s linear infinite; 
+}
+@keyframes height_pic {
+        0% {top: 0px;}
+        100%{top: 200px;}
+        }
+        #second { 
+        margin-top: 10px;
+        position: relative;
+        animation: height_pic 4s linear infinite; 
+}
+@keyframes height_pic {
+        0% {top: 0px;}
+        100%{top: 200px;}
+        }
+        #second { 
+        margin-top: 10px;
+        position: relative;
+        animation: height_pic 4s linear infinite; 
+}
+@keyframes random_third {
+        0% {left: 200px; top: 0;}
+        25%{left: 0px; top: 200px;}
+        50%{left: 200px; top: 0;}
+        75%{left: 0px; top: 200px;}
+        100%{left: 200px; top: 0;}
+        }
+        #third { 
+        margin-top: 10px;
+        position: relative;
+        animation: random_third 4s linear infinite; 
+}
+@keyframes four {
+    0% { left: 0; top: 0; }
+    25% { left: 200px; top: 0; }
+    50% { left: 200px; top: 200px; }
+    75% { left: 0; top: 200px; }
+    100% { left: 0; top: 0; }
+    }
+    #four { 
+    position: relative;
+    animation: four 4s linear infinite; 
+}
+@keyframes hhh {
+0% {opacity: 0%;}
+100%{opacity: 80%;}
+}
+h1{
+    position: relative;
+    animation-name: hhh;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}

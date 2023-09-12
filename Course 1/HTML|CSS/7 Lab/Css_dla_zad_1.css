@@ -1,0 +1,29 @@
+div{
+    display: inline-block;
+}
+div img{
+    width: 100px;
+}
+img:nth-child(1):hover{
+    transform: scale(0.5);
+}
+img:nth-child(2):hover{
+    transform: rotate(45deg) ;
+}
+img:nth-child(3):hover{
+    transform: translate(50px);
+} 
+img:nth-child(4):hover{
+    transform: rotate(-20deg);
+} 
+@keyframes hhh {
+    0% {opacity: 0%;}
+    100%{opacity: 80%;}
+    }
+    h1{
+        position: relative;
+        animation-name: hhh;
+        animation-duration: 8s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
