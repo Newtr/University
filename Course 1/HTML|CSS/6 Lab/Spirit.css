@@ -1,0 +1,59 @@
+.EE li {
+    list-style: none;
+    background-image: url("Mb.png");
+    background-repeat: no-repeat;
+    padding-left: 25px;
+    padding-bottom: 5px;
+    }
+body {
+    background-image: url("Fit_image.png");
+    background-repeat: no-repeat;
+    position: relative;
+    padding: px;
+    background-position: right top ;
+    background-attachment: fixed;
+    background-size: 100px;
+}
+#Pervoe img{
+    float: left;
+    clear: left;
+}
+h1,h2{
+    margin:0px
+}
+h1 p{
+    margin: 0px;
+}
+h2 p{
+    margin: 0px;
+}
+h1 p:first-child{
+    padding-left: 250px;
+}
+h2 p:first-child{
+    padding-left: 250px;
+}
+#tt{
+    clear:left;
+}
+#Vtoroe img{
+    float: right;
+} 
+#Vtoroe p{
+    text-align: right;
+}
+h3,h4{
+    margin: 0px;
+}
+h3 p{
+    margin: 0px;
+}
+h4 p{
+    margin:0px;
+}
+h3 p:first-child{
+    padding-right: 250px;
+}
+h4 p:first-child{
+    padding-right: 250px;
+}

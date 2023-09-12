@@ -1,0 +1,24 @@
+.con1 div{
+    display: inline-block;
+    width: 150px;
+    height:150px;
+    margin-left: 10px;
+}
+.con1 div:nth-child(1){
+    background-image: linear-gradient(to top, red, blue);
+}
+.con1 div:nth-child(2){
+    background-image: repeating-linear-gradient(45deg, blue, blue 10px, red 10px, red 20px)
+}
+.con1 div:nth-child(3){
+    background: radial-gradient(circle, rgba(230,255,2,1) 15%, rgb(27, 141, 42) 75%);
+}
+.con1 div:nth-child(4){
+    background: -webkit-repeating-radial-gradient(50% 50%, circle, green, green 15px,yellow 15px, yellow 25px);
+}
+.con1 div:nth-child(5){
+    background-image: radial-gradient(circle at 50% 45%, yellow, green, blue,purple);
+}
+.con1 div:nth-child(6){
+    background-image: linear-gradient(90deg, yellow, green, transparent), linear-gradient(black, black, black, white, white, white, blue, magenta, magenta);
+}
