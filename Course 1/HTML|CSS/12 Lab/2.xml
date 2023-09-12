@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="Students.xsl"?>
+<t>
+    <Student1>8</Student1>
+    <Student2>2</Student2>
+    <Student1>9</Student1>
+    <Student2>1</Student2>
+    <Student1>7</Student1>
+    <Student2>3</Student2>
+</t>

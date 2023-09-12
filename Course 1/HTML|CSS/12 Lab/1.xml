@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="Goroda.xsl"?>
+<catalog>
+<cd>
+<Rate>10/10</Rate>
+<Gorod>Минск</Gorod>
+<People>7 миллионов</People>
+</cd>
+<cd>
+<Rate>7/10</Rate>
+<Gorod>Брест</Gorod>
+<People>2 миллиона</People>
+</cd>
+</catalog>
