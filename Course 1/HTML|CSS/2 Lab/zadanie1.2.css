@@ -1,0 +1,19 @@
+h1,h2,h3,h4 {
+	color:purple;
+	font-family:Monotype Corsiva
+}
+.E1 {
+	color:red;
+	font-family:Time New Roman;
+	font-size:18pt;
+}
+.E2 {
+	color:yellow;
+	font-family:Time New Roman;
+	font-size:20pt;
+}
+.E3 {
+	color:green;
+	font-family:Time New Roman;
+	font-size:22pt;
+}
