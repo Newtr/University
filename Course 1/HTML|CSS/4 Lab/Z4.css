@@ -1,0 +1,38 @@
+table{
+    margin: auto;
+    background-color: indigo;
+    color:rgba(255,255,255,1);
+    box-shadow: inset 0 0 10px rgba(255,255,255, .75);
+    font-size: 1.2em;
+}
+td:nth-child(odd){
+    padding-right: 100px;
+}
+td {
+    padding-bottom: 5px;
+}
+caption{
+    text-align: center;
+}
+input[type="text"]{
+    background-color:rgba(255,255,255,.5);
+}
+input[type="button"]{
+    background-color: navy;
+    box-shadow: 0 0 4px white;
+    color: white;
+}
+input[type="text"]:focus{
+    color:white;
+    background-color: black;
+    }
+    input.Mail:focus{
+        background-color:rgba(255,255,255,.5);
+        color:black
+    }
+    th{
+        text-align: center;
+    }
+    td.k1 {
+        text-align: right;
+    }
