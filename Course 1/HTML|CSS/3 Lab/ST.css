@@ -1,0 +1,57 @@
+@font-face {
+  font-family: "Caveat";
+  src: url("Fonts/Caveat.woff");
+}
+@font-face {
+  font-family: "Exo2";
+  src: url("Fonts/Exo2.woff");
+}
+@font-face {
+  font-family: ("Comfortaa");
+  src: url("Fonts/Comfortaa.woff");
+}
+h1 {
+  font-family: "Caveat";
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+  font-style: bold;
+  text-transform: capitalize;
+  font-size: 45px;
+  text-shadow: 5px 5px 5px blue;
+}
+h2 {
+  font-family: "Exo2";
+  margin-bottom: 1.2em;
+  margin-top: 0.2rem;
+  text-align: left;
+}
+.p1 {
+  margin-left: 25px;
+}
+body p {
+  font-family: "Comfortaa";
+  text-align: justify;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  line-height: 200%;
+  font-size: 20px;
+}
+body > p::first-letter {
+  font-style: bold;
+  font-size: 45px;
+  color: white;
+  background-color: hsla(275, 100%, 10%, 1);
+}
+#Spisok {
+  margin-bottom: 0%;
+}
+li {
+  list-style-type: upper-roman;
+  color: blue;
+}
+li > p {
+  color: green;
+  font-family: "Comfortaa";
+  font-size: 45px;
+}
