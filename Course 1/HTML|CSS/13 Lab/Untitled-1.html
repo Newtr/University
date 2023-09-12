@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ARA</title>
+</head>
+
+<body>
+    <div class="first">
+        <p>Фамилия: <span id="family"></span></p>
+        <p>Имя: <span id="name"></span></p>
+        <p>Отчество: <span id="father"></span></p>
+        <p>Возраст: <span id="age"></span></p>
+        <p>Дата рождения: <span id="dob"></span></p>
+    </div>
+    <script>
+        txt = "<student>";
+        txt = txt + "<name>Никита</name>";
+        txt = txt + "<family>Ильин</family>";
+        txt = txt + "<father>Сергеевич</father>";
+        txt = txt + "<age>17 лет</age>";
+        txt = txt + "<dob>05.01.2004</dob>";
+        txt = txt + "<info>Родился и жил в городе Жлобине, Гомельская область, Беларусь. Учился в ГУО Средняя школа №10. После окончания поступил в БГТУ на бюджет.</info>";
+        txt = txt + "<student>";
+        if (window.DOMParser)
+        {
+            parser = new DOMParser();
+            xmlDoc = parser.parseFromString(txt, "text/xml")
+        }
+        else
+        {
+            xmlDoc = new ActiveXObject("Microsoft.XMLDOM");
+            xmlDoc.async = false;
+            xmlDoc.loadXML(txt);
+        }
+        document.getElementById("name").innerHTML = xmlDoc.getElementsByTagName("name")
+        [0].childNodes[0].nodeValue;
+        document.getElementById("family").innerHTML = xmlDoc.getElementsByTagName("family")
+        [0].childNodes[0].nodeValue;
+        document.getElementById("father").innerHTML = xmlDoc.getElementsByTagName("father")
+        [0].childNodes[0].nodeValue;
+        document.getElementById("age").innerHTML = xmlDoc.getElementsByTagName("age")
+        [0].childNodes[0].nodeValue;
+        document.getElementById("dob").innerHTML = xmlDoc.getElementsByTagName("dob")
+        [0].childNodes[0].nodeValue;
+        document.getElementById("info").innerHTML = xmlDoc.getElementsByTagName("info")
+        [0].childNodes[0].nodeValue;
+    </script>
+</body>
+
+</html>

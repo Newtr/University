@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>3</title>
+</head>
+<body>
+    <div>
+        <p>Город: <span id="name"></span></p>
+        <p>Рейтинг: <span id="Rate"></span></p>
+    </div>
+    <script>
+        txt = "<Gorod>";
+        txt= txt + "<name>Minsk</name>";
+        txt= txt + "<Rate>9</Rate>";
+        txt= txt + "</Gorod>";
+        if(window.DOMParser){
+            parser = new DOMParser();
+            xmlDoc = parser.parseFromString(txt, "text/xml")
+        }
+        else{
+            xmlDoc = new ActiveXObject("Microsoft.XMLDOM");
+            xmlDoc.async = false;
+            xmlDoc.loadXML(txt);
+        }
+        document.getElementById("name").innerHTML = xmlDoc.getElementsByTagName("name")
+        [0].childNodes[0].nodeValue;
+        document.getElementById("Rate").innerHTML = xmlDoc.getElementsByTagName("Rate")
+        [0].childNodes[0].nodeValue;
+    </script>
+</body>
+</html>

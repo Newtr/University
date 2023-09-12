@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>4</title>
+</head>
+<body>
+    <div>
+        <p>Game: <span id="Game"></span></p>
+        <p>Year: <span id="Year"></span></p>
+    </div>
+    <script>
+        txt = "<Gorod>";
+        txt= txt + "<Game>The Witcher</Game>";
+        txt= txt + "<Year>2015</Year>";
+        txt= txt + "</Gorod>";
+        if(window.DOMParser){
+            parser = new DOMParser();
+            xmlDoc = parser.parseFromString(txt, "text/xml")
+        }
+        else{
+            xmlDoc = new ActiveXObject("Microsoft.XMLDOM");
+            xmlDoc.async = false;
+            xmlDoc.loadXML(txt);
+        }
+        document.getElementById("Game").innerHTML = xmlDoc.getElementsByTagName("Game")
+        [0].childNodes[0].nodeValue;
+        document.getElementById("Year").innerHTML = xmlDoc.getElementsByTagName("Year")
+        [0].childNodes[0].nodeValue;
+    </script>
+</body>
+</html>
