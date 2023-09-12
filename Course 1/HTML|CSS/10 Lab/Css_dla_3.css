@@ -1,0 +1,19 @@
+.nav{
+    border: 2px solid black;
+    width: 30%;
+    height: 40%;
+    float:left;
+}
+.nav>ol>li:first-child{
+    list-style: none;
+}
+.second{
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.ekran{
+    margin-left: 50%;
+    border: 2px solid black;
+    width: 30%;
+    height: 40%;
+}
