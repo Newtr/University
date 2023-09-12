@@ -1,0 +1,25 @@
+.grid {
+    display:grid;
+    grid-template-columns:20px 100px 100px;
+    grid-template-rows:100px 100px 100px;
+    grid-gap: 5px;
+    text-align: center;
+}
+.div1{
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    border: 1px solid black;
+}
+.div2{
+
+    grid-row-start: 1;
+    grid-row-end: 4;
+    border: 1px solid black;
+}
+.div1 p{
+    writing-mode: lr-tb;
+    overflow-wrap: break-word;
+    padding: 5px;
+}
