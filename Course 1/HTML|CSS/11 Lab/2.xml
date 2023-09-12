@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE Goroda SYSTEM "2.dtd">
+<Goroda>
+<Minsk>
+<Size>&quot;Большой&quot;</Size>
+<People>Много</People>
+<Rate>10/10</Rate>
+</Minsk>
+<Brest>
+<Size>&quot;>Меньше&quot;</Size>
+<People>Не так много как в Минске</People>
+<Rate>8/10</Rate>
+</Brest>
+<Grodno>
+<Size>&quot;Я не знаю&quot;</Size>
+<People>Так же как и в Бресте</People>
+<Rate>7/10</Rate>
+</Grodno>
+</Goroda>

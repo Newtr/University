@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE Goroda [
+<!ELEMENT Goroda (Minsk,Brest,Grodno,Size,People,Rate)>
+<!ELEMENT Minsk (#PCDATA)>
+<!ELEMENT Brest (#PCDATA)>
+<!ELEMENT Grodno (#PCDATA)>
+<!ELEMENT Size (#PCDATA)>
+<!ELEMENT People (#PCDATA)>
+<!ELEMENT Rate (#PCDATA)>
+]>

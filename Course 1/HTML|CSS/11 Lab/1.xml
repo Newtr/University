@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="1.css"?>
+<Goroda>
+<Minsk>
+<Size>Большой</Size>
+<People>Много</People>
+<Rate>10/10</Rate>
+</Minsk>
+<Brest>
+<Size>Меньше</Size>
+<People>Не так много как в Минске</People>
+<Rate>8/10</Rate>
+</Brest>
+<Grodno>
+<Size>Я не знаю</Size>
+<People>Так же как и в Бресте</People>
+<Rate>7/10</Rate>
+</Grodno>
+</Goroda>

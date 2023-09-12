@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="Goroda">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="Minsk" type="xs:string"/>
+<xs:element name="Brest" type="xs:string"/>
+<xs:element name="Grodno" type="xs:string"/>
+<xs:element name="Size" type="xs:string"/>
+<xs:element name="People" type="xs:string"/>
+<xs:element name="Rate" type="xs:string"/>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:schema>
