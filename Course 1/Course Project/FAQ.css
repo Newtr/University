@@ -1,0 +1,13 @@
+.question{
+    width: 100%;
+    height: 50px;
+    margin-top: 2%;
+}
+.question>h1{
+    text-align: center;
+    color: white;
+}
+
+.question>p{
+    font-size: 20px;
+}

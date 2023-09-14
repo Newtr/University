@@ -1,0 +1,55 @@
+#PopularToday{
+    margin-top: 15px;
+    width: 100%;
+    background-color: #98E0F0;
+    text-align: center;
+    line-height: 30px;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 25px;
+}
+#PopularTodayPhotos{
+    width: 100%;
+    /* background-color: beige; */
+    height: 150px;
+}
+#PopularTodayPhotos div{
+    display: inline-block;
+}
+.FivePhotos img{
+    width: 200px;
+    margin-left: 70px;
+    height: 150px;
+    /* background-color: blueviolet; */
+    border-radius: 25px;
+}
+#NewProducts{
+    margin-top: 15px;
+    width: 100%;
+    background-color: #F80000;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 25px;
+}
+
+#NewProductsPhotos{
+    width: 100%;
+    /* background-color: beige; */
+    height: 150px;
+}
+#NewProductsPhotos div{
+    display: inline-block;
+}
+
+.NewProductsTwoPhotos img{
+    width: 450px;
+    height: 350px;
+    background-color: blueviolet;
+    border-radius: 25px;
+}
+.NewProductsTwoPhotos{
+    margin-left: 200px;
+}

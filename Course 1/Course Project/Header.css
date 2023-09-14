@@ -1,0 +1,38 @@
+body{
+    background-color: #905353;
+}
+#LocationShop_And_Main div{
+    display: inline;
+}
+#location_shop{
+    margin-left: 10px;
+    padding-right: 10px;
+}
+#Log_in{
+    padding-right: 0px;
+}
+#Help{
+    padding-right: 18px;
+}
+#Other{
+    margin-left: 55%;
+}
+#Other div{
+    display: inline;
+}
+#head{
+    background-color: #FFB800;
+    height: 30px;
+}
+#head div{
+    display: inline;
+}
+#head input{
+    color: white;
+    background-color: red;
+    border: 0;
+    border-radius: 35px;
+}
+#head input:hover{
+    color: black;
+}

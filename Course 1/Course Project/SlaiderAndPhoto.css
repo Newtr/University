@@ -1,0 +1,35 @@
+#SlaiderAndPhoto div{
+    display: inline-block;
+}
+#SlaiderAndPhoto{
+    height: 300px;
+}
+#Photo{
+    width: 580px;
+    height: 350px;
+}
+#slid{
+    width: 897px;
+    height: 300px;
+    position: relative;
+    border-radius: 15px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.slid-single{
+    width: 897px;
+    height: 300px;
+    position: absolute;
+    transition: all ease 1s;
+    left: 0;
+    top: 0;
+}
+#PhotoObject{
+    width: 580px;
+    height: 300px;
+}
+#PhotoObject img{
+    width: 580px;
+    height: 300px;
+    border-radius: 15px;
+}
