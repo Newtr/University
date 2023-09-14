@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>4</title>
+</head>
+<body>
+	<canvas id="canvas" width="500" height="500"></canvas>
+	<form name="data">
+	<input type="radio" name="first"  onclick="first()">y=x^2
+	<input type="radio" name="first"  onclick="second()">y=x^3
+	<input type="radio" name="first"  onclick="third()">y=sin(x)
+	<input type="radio" name="first"  onclick="four()">y=cos(x)
+	<button onclick="clear()">очистка</button>
+	<select name="newcolor"><option value="red">red</option><option value="blue">blue</option></select> <br /></form>
+
+<!-- канвас это HTML5 элемент для рисования -->
+	
+
+
+	<script type="text/javascript">
+
+		var elemCanvas = document.getElementById('canvas');
+		var a = elemCanvas.getContext('2d');//рисунок будет 2d
+		var canvaswidth = elemCanvas.clientWidth; //узнаем ширину и высоту канваса
+		var canvasheight = elemCanvas.clientHeight;
+		var color;
+		var spis = document.querySelector("select[name='newcolor']");
+		spis.onchange = function() {
+			color = a.fillStyle = data.newcolor.value;
+		};
+		console.log(canvaswidth, canvasheight);//выводим ее в консоль 
+
+		var scaleX = 50;
+		var scaleY = 50;
+
+		var xCent = canvaswidth / 2;
+		var yCent = canvasheight / 2;
+
+		//рисуем график 
+		function first() {
+			a.beginPath(); //наичнаем путь 
+			a.strokeStyle = '#FFD48E';//задаем цвет сетке
+
+		for(let i = 0; i <= canvaswidth; i = i + scaleX){ //двигаемся по ширине канваса
+			a.moveTo(i, 0);//i это x y это 0
+			a.lineTo(i, canvasheight); //строим вертикальные линии 
+		}
+		a.stroke();	//обводим цветом в strokeStyle
+
+		for(let i = 0; i <= canvasheight; i = i + scaleY) {
+			a.moveTo(0, i);
+			a.lineTo(canvaswidth, i);//строим горизонтальные линии
+		}
+		a.stroke();
+		a.closePath();//закрываем путь чтобы потом поверх рисовать линии другого цвета
+
+		a.beginPath();
+		
+		a.strokeStyle = '#050404'; 
+		a.moveTo(xCent, 0);
+		a.lineTo(xCent, canvasheight);
+
+		a.moveTo(0, yCent);
+		a.lineTo(canvaswidth, yCent);
+		a.stroke();
+		a.closePath();
+			for(let i = 0; i <= canvaswidth; i++) {
+				var x = (i - xCent) / scaleX;
+				var y = Math.pow(x, 2);
+				a.fillRect(x * scaleX + xCent, yCent - scaleY * y , 3 , 3);
+			}
+		}
+		
+		function second() {
+			a.beginPath(); //наичнаем путь 
+		a.strokeStyle = '#FFD48E';//задаем цвет сетке
+
+		for(let i = 0; i <= canvaswidth; i = i + scaleX){ //двигаемся по ширине канваса
+			a.moveTo(i, 0);//i это x y это 0
+			a.lineTo(i, canvasheight); //строим вертикальные линии 
+		}
+		a.stroke();
+
+		for(let i = 0; i <= canvasheight; i = i + scaleY) {
+			a.moveTo(0, i);
+			a.lineTo(canvaswidth, i);//строим горизонтальные линии
+		}
+		a.stroke();
+		a.closePath();//закрываем путь чтобы потом поверх рисовать линии другого цвета
+
+		a.beginPath();
+		
+		a.strokeStyle = '#050404'; 
+		a.moveTo(xCent, 0);
+		a.lineTo(xCent, canvasheight);
+
+		a.moveTo(0, yCent);
+		a.lineTo(canvaswidth, yCent);
+		a.stroke();
+		a.closePath();
+
+			for(let i = 0; i <= canvaswidth; i++) {
+				var x = (i - xCent) / scaleX;
+				var y = Math.pow(x, 3);
+				a.fillRect(x * scaleX + xCent, yCent - scaleY * y , 3 , 3)
+			}
+		}
+		function third() {
+			a.beginPath(); //наичнаем путь 
+		a.strokeStyle = '#FFD48E';//задаем цвет сетке
+
+		for(let i = 0; i <= canvaswidth; i = i + scaleX){ //двигаемся по ширине канваса
+			a.moveTo(i, 0);//i это x y это 0
+			a.lineTo(i, canvasheight); //строим вертикальные линии 
+		}
+		a.stroke();
+
+		for(let i = 0; i <= canvasheight; i = i + scaleY) {
+			a.moveTo(0, i);
+			a.lineTo(canvaswidth, i);//строим горизонтальные линии
+		}
+		a.stroke();
+		a.closePath();//закрываем путь чтобы потом поверх рисовать линии другого цвета
+
+		a.beginPath();
+		
+		a.strokeStyle = '#050404'; 
+		a.moveTo(xCent, 0);
+		a.lineTo(xCent, canvasheight);
+
+		a.moveTo(0, yCent);
+		a.lineTo(canvaswidth, yCent);
+		a.stroke();
+		a.closePath();
+
+			for(let i = 0; i <= canvaswidth; i++) {
+				var x = (i - xCent) / scaleX;
+				var y = Math.sin(x);
+				a.fillRect(x * scaleX + xCent, yCent - scaleY * y , 3 , 3)
+			}
+		}
+		function four() {
+			a.beginPath(); //наичнаем путь 
+		a.strokeStyle = '#FFD48E';//задаем цвет сетке
+
+		for(let i = 0; i <= canvaswidth; i = i + scaleX){ //двигаемся по ширине канваса
+			a.moveTo(i, 0);//i это x y это 0
+			a.lineTo(i, canvasheight); //строим вертикальные линии 
+		}
+		a.stroke();
+
+		for(let i = 0; i <= canvasheight; i = i + scaleY) {
+			a.moveTo(0, i);
+			a.lineTo(canvaswidth, i);//строим горизонтальные линии
+		}
+		a.stroke();
+		a.closePath();//закрываем путь чтобы потом поверх рисовать линии другого цвета
+
+		a.beginPath();
+		
+		a.strokeStyle = '#050404'; 
+		a.moveTo(xCent, 0);
+		a.lineTo(xCent, canvasheight);
+
+		a.moveTo(0, yCent);
+		a.lineTo(canvaswidth, yCent);
+		a.stroke();
+		a.closePath();
+			for(let i = 0; i <= canvaswidth; i++) {
+				var x = (i - xCent) / scaleX;
+				var y = Math.cos(x);
+				a.fillRect(x * scaleX + xCent, yCent - scaleY * y , 3 , 3)
+			}
+		}
+
+		function clear() {
+			a.clearRect(0 , 0 ,canvaswidth,canvasheight);
+		}
+
+
+
+
+
+
+	</script>
+</body>
+</html>

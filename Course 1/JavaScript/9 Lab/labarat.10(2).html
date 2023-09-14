@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>2</title>
+	<style type="text/css">
+		#contain {
+			width: 500px;
+			height: 500px;
+			position: relative;
+		}
+		#animat {
+			width: 100px;
+			height: 100px;
+			position: absolute;
+			background-color: red;
+		}
+	</style>
+</head>
+<body>
+	<input type="button" value="click" onclick="muve()">
+	<div id="contain">
+		<img src="cat_1.jpeg" alt="" id="animat">
+	</div>
+
+
+	<script type="text/javascript">
+		function muve() {
+			let elem = document.getElementById('animat');
+			let posit = 0;
+			let id = setInterval(first, 10);
+			function first() {
+				if(posit == 400){
+					clearInterval(id);
+				}else {
+					posit++;
+					elem.style.left = posit + 'px';
+				}
+			}
+		}
+		
+		
+	</script>
+	
+</body>
+</html>

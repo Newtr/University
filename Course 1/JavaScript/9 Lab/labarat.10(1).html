@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>1</title>
+	<style type="text/css">
+		#sp1 {
+			position: absolute;
+			top: 10px;
+			left: 10px;
+		}
+		#cat {
+			height: 50px;
+			width: 50px;
+			position: absolute;
+			top:40px;
+			left: 10px;
+		}
+	</style>
+</head>
+<body>
+	<textarea id="sp1" draggable="true">HELLO</textarea>
+
+	<img src="cat_1.jpeg" alt="" id="cat" draggable="true">
+	
+	<script type="text/javascript">
+		var osx, osy;
+		
+		function muvetext(){
+		var text = document.getElementById('sp1');
+		text.addEventListener('dragstart', function(event) {
+			osx = event.offsetX;
+			osy = event.offsetY;  
+		});
+		text.addEventListener('dragend', function(event) {
+			console.log(event.pageX, event.pageY);
+			text.style.top = (event.pageY - osy) + 'px';
+			text.style.left = (event.pageX - osx) + 'px';  
+		});}
+		muvetext();
+		function muveimg() {
+			var image = document.getElementById('cat');
+			image.addEventListener('dragstart', function(event) {
+			osx = event.offsetX;
+			osy = event.offsetY;  
+		});
+		image.addEventListener('dragend', function(event) {
+			
+			image.style.top = (event.pageY - osy) + 'px';
+			image.style.left = (event.pageX - osx) + 'px';  
+		});}
+		muveimg();
+
+
+		
+		
+		
+	</script>
+</body>
+</html>
