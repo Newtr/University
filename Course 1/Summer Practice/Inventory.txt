@@ -1,0 +1,6 @@
+Gold:506
+Credit_History_First_Shopkeeper:5
+Credit_History_Second_Shopkeeper:3
+Credit_History_Third_Shopkeeper:0
+Credit_History_Fourth_Shopkeeper:12
+Credit_History_Fifth_Shopkeeper:0

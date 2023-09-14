@@ -1,0 +1,6 @@
+Name:Nikita,SecondName:Ilyin,Saletime:12,Speacialization:BerryPicker,NProduct1:Strawberries,NProduct2:Raspberries,NProduct3:Blackberries,CProduct1:50,CProduct2:20,CProduct3:5,PProduct1:1.200000,PProduct2:0.950000,PProduct3:1.450000
+Name:Roman,SecondName:Tyshkevich,Saletime:14,Speacialization:Fisherman,NProduct1:Catfish,NProduct2:Pike,NProduct3:Carp,CProduct1:0,CProduct2:4,CProduct3:41,PProduct1:1.200000,PProduct2:0.950000,PProduct3:1.450000
+Name:Dmitry,SecondName:Barabanov,Saletime:16,Speacialization:Builder,NProduct1:Concrete,NProduct2:Brick,NProduct3:Cement,CProduct1:1,CProduct2:13,CProduct3:49,PProduct1:1.200000,PProduct2:0.950000,PProduct3:1.450000
+Name:Elizabeth,SecondName:Volynec,Saletime:19,Speacialization:Butcher,NProduct1:Sausages,NProduct2:Barbecue,NProduct3:Meatballs,CProduct1:0,CProduct2:15,CProduct3:30,PProduct1:1.200000,PProduct2:0.950000,PProduct3:1.450000
+Name:Egorik,SecondName:Martini,Saletime:21,Speacialization:FruitSeller,NProduct1:Apples,NProduct2:Pear,NProduct3:Orange,CProduct1:61,CProduct2:15,CProduct3:49,PProduct1:1.200000,PProduct2:0.950000,PProduct3:1.450000
+
