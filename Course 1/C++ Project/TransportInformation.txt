@@ -1,0 +1,14 @@
+<<<<<<< HEAD
+Type: Car Speed: 90 km/h Number of seats: 4 
+Type: Bus Speed: 25 km/h Number of seats: 90
+Type: Minibus Speed: 28 km/h Number of seats: 20
+Type: Train Speed: 32 km/h Number of seats: 50
+Type: Bike Speed: 15 km/h
+=======
+Type: Car Speed: 90 km/h
+Type: Bus Speed: 25 km/h 
+Type: Minibus Speed: 28 km/h
+Type: Train Speed: 32 km/h
+Type: Bike Speed: 15 km/h
+>>>>>>> 5d58235e88593898e734ac81c2ccbe12f45595c5
+Type: OnFoot Speed: 5 km/h
