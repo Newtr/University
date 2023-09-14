@@ -1,0 +1,50 @@
+*{
+    background-color: rgb(121, 184, 175);
+}
+header{
+    margin-top: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    height: 35px;
+    background-color: purple;
+}
+header table{
+    background-color: purple;
+}
+header table td{
+    background-color: purple;
+    border: 1px solid black;
+    width: 500px;
+    height: 30px;
+    text-align: center;
+    font-size: 15px;
+}
+header table td a{
+    text-decoration: none;
+    background-color: purple;
+    color: black;
+}
+
+.choose div{
+    margin-top: 10px;
+    margin: 10px auto;
+    width: 500px;
+    height: 150px;
+    background-color: chartreuse;
+}
+.choose div h1{
+    background-color: chartreuse;
+    text-align: center;
+}
+.form-checkbox {
+    display: block;
+}
+.checkVybor{
+    margin: 0 35px auto;
+}
+#adress{
+    margin: 5px;
+}
+#pechat{
+    margin: 5px;
+}

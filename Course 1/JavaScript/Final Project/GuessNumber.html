@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Угадай число</title>
+
+    <style>
+        html {
+    font-family: sans-serif;
+    }
+    
+        body {
+    width: 50%;
+    max-width: 800px;
+    min-width: 480px;
+    margin: 0 auto;
+    }
+    </style>
+</head>
+
+<body>
+<h1>Угадай число</h1>
+
+<p>Я загадал случайное число от 1-50. Попробуй его угадать.</p>
+
+<div class="form">
+    <label for="guessField">Введите попытку: </label>
+    <input type = "text" id = "guessField" class = "guessField">
+    <input type = "submit" value = "Submit guess" 
+        class = "guessSubmit" id = "submitguess">
+</div>
+
+<script type = "text/javascript">
+
+    // random value generated
+    var y = Math.floor(Math.random() * 50 + 1);
+    
+    // counting the number of guesses
+    // made for correct Guess
+    var guess = 1;
+    
+    document.getElementById("submitguess").onclick = function(){
+    
+   // number guessed by user     
+var x = document.getElementById("guessField").value;
+
+if(x == y)
+{    
+    alert("ПОЗДРАВЛЯЮ! ТЫ угадал число. Тебе понадобилось "+ guess + " попыток ");
+}
+else if(x > y) /* if guessed number is greater
+                than actual number*/ 
+{    
+    guess++;
+    alert("Нет, нет,нет. Попробуй число по-меньше");
+}
+else
+{
+    guess++;
+    alert("Нет, нет,нет. Попробуй число по-больше")
+}
+}
+</script>
+</body>
+</html>      

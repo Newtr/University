@@ -1,0 +1,45 @@
+*{
+    background-color: rgb(121, 184, 175);
+}
+header{
+    margin-top: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    height: 35px;
+    background-color: purple;
+}
+header table{
+    background-color: purple;
+}
+header table td{
+    background-color: purple;
+    border: 1px solid black;
+    width: 500px;
+    height: 30px;
+    text-align: center;
+    font-size: 15px;
+}
+header table td a{
+    text-decoration: none;
+    background-color: purple;
+    color: black;
+}
+h1{
+    text-align: center;
+}
+#snake{
+    text-align: center;
+}
+#snake a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+#GSNumber{
+    text-align: center;
+}
+#GSNumber a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}

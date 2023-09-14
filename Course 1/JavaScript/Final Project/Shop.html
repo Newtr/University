@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="CssForShop.css" rel="stylesheet">
+    <title>Shop</title>
+</head>
+<body>
+    <header>
+        <table>
+            <tr>
+                <td><a href="Main.html" id= "Glavnaja" onmouseover="NewColor1()" onmouseout="BackToNormalColor1()">Главная</a></td>
+                <td><a href="MiniGames.html" id = "MiniGames" onmouseover="NewColor2()" onmouseout="BackToNormalColor2()">Мини-игры</a></td>
+                <td><a href="https://www.belstu.by/" id = "News" onmouseover="NewColor3()" onmouseout="BackToNormalColor3()">Новости</a></td>
+                <td><a href="Shop.html" id = "Shop" onmouseover="NewColor4()" onmouseout="BackToNormalColor4()">Магазин</a></td>
+            </tr>
+        </table>
+    </header>
+<form id="shop">
+    <div class="choose">
+        <div id="mebel">
+            <h1>Мебель</h1>
+            <input type="checkbox" name="check" value="Диван" class="checkVybor" id="chek1"/>Диван
+            <input type="checkbox" name="check" value="Кровать"class="checkVybor" id="chek2"/>Кровать
+            <input type="checkbox" name="check" value="Кресло"class="checkVybor" id="chek3"/>Кресло
+        </div>
+    </div>
+    <div class="choose">
+        <div id="electronic">
+            <h1>Электроника</h1>
+            <input type="checkbox" name="check" value="Телевизор" class="checkVybor" id="chek11"/>Телевизор
+            <input type="checkbox" name="check" value="Компьютер"class="checkVybor" id="chek22"/>Компьютер
+            <input type="checkbox" name="check" value="Ноутбук"class="checkVybor" id="chek33"/>Ноутбук
+        </div>
+    </div>
+    <div class="choose">
+        <div id="kanst">
+            <h1>Канцтовары</h1>
+            <input type="checkbox" name="check" value="Набор ручек" class="checkVybor" id="chek111"/>Набор ручек
+            <input type="checkbox" name="check" value="Бумага 50шт."class="checkVybor" id="chek222"/>Бумага 50шт.
+            <input type="checkbox" name="check" value="Тетради"class="checkVybor" id="chek333"/>Тетради
+        </div>
+    </div>
+    <div class="choose">
+        <div id="UserInfo">
+            Адрес: <input type="text" name="SecondName" id="adress"></br>
+            Доставка: <input type="radio" name="radd" value="Пеший курьер " class="radioVybor"/>Пеший курьер 
+            <input type="radio" name="radd" value="Курьер на машине" class="radioVybor"/>Курьер на машине</br>
+            <input type="button" name="pechat" value="Напечатать" id="pechat" onclick="pechataet()">
+    </div>
+</form>
+    <script src="JsForShop.jsx"></script>
+</body>
+</html>
