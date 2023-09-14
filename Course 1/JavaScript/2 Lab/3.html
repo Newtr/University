@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<script>
+    let x = new Number(25), y = new Number(50.27542)
+    document.write("<table border='1'>")
+        document.write("<th>Число</th>")
+        document.write("<th>Метод</th>")
+        document.write("<th>Результат</th>")
+        document.write("<th>Описание результата</th>")
+        document.write("<tr>")
+            document.write("<td rowspan='4'>25</td>")
+            document.write("<td>toExponential</td>")
+            document.write("<td>"+ x.toExponential(2) +"</td>")
+            document.write("<td>Метод toExponential() возвращает строку, представляющую объект Number в экспоненциальной записи.</td>")
+        document.write("</tr>")
+        document.write("<tr>")
+            document.write("<td>toFixed</td>")
+            document.write("<td>"+ x.toFixed(2) +"</td>")
+            document.write("<td>Метод toFixed() форматирует число, используя запись с фиксированной запятой.</td>")
+        document.write("</tr>")
+        document.write("<tr>")
+            document.write("<td>toPrecision</td>")
+            document.write("<td>"+ x.toPrecision(2) +"</td>")
+            document.write("<td>Метод toPrecision() возвращает строку, представляющую объект Number с указанной точностью.</td>")
+        document.write("</tr>")
+        document.write("<tr>")
+            document.write("<td>toString</td>")
+            document.write("<td>"+ x.toString(2) +"</td>")
+            document.write("<td>Метод toString() возвращает строку, представляющую объект.</td>")
+        document.write("</tr>")
+        document.write("<tr>")
+            document.write("<td rowspan='4'>50.27542</td>")
+            document.write("<td>toExponential</td>")
+            document.write("<td>"+ y.toExponential(2) +"</td>")
+            document.write("<td>Метод toExponential() возвращает строку, представляющую объект Number в экспоненциальной записи.</td>")
+        document.write("</tr>")
+        document.write("<tr>")
+            document.write("<td>toFixed</td>")
+            document.write("<td>"+ y.toFixed(2) +"</td>")
+            document.write("<td>Метод toFixed() форматирует число, используя запись с фиксированной запятой.</td>")
+        document.write("</tr>")
+        document.write("<tr>")
+            document.write("<td>toPrecision</td>")
+            document.write("<td>"+ y.toPrecision(2) +"</td>")
+            document.write("<td>Метод toPrecision() возвращает строку, представляющую объект Number с указанной точностью.</td>")
+        document.write("</tr>")
+        document.write("<tr>")
+            document.write("<td>toString</td>")
+            document.write("<td>"+ y.toString(2) +"</td>")
+            document.write("<td>Метод toString() возвращает строку, представляющую объект.</td>")
+        document.write("</tr>")
+    document.write("</table>")
+</script>
+</head>
+<body>
+</body>
+</html>

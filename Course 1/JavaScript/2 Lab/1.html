@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<script>
+function T1() {
+let a = prompt("значение а");
+let b = prompt("значение b");
+document.write("<table border='1'>");
+    for (let i = 1; i <= b; i++) {
+document.write("<tr align='center'>");
+    for (let j = 1; j <= a; j++) {
+document.write("<td>" + i * j + "</td>");
+}
+document.write("</tr>");
+}
+document.write("</table>");
+}
+</script>
+</head>
+<body>
+<button onclick="T1()">Table</button>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<script>
+function T2(){
+    document.write("<table border='1'>")
+    let a=1; b=5;
+    document.write("<tr>")
+        document.write("<td>Радус</td>")
+        document.write("<td>Площадь круга</td>")
+        document.write("<td>Длина окружности</td>")
+    document.write("</tr>")
+do {
+    document.write("<tr>")
+a=a+0.3
+let S = 3.14*Math.pow(a,2)
+let P = 2*3.14*a
+        document.write("<td>")
+    document.write("" + a.toFixed(2) + "" )
+        document.write("</td>")
+            document.write("<td>")
+    document.write(Math.round(S))
+            document.write("</td>")
+        document.write("<td>")
+            document.write(Math.round(P))
+        document.write("</td>")
+    document.write("</tr>")
+}
+while (a<=b);
+    document.write("</table>")
+}
+</script>
+</head>
+<body>
+<button onclick="T2()">Table</button>
+</body>
+</html>
