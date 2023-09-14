@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <title>Zad2</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="scs.css" />
+  </head>
+  <body>
+    <img src="Cat_1.jpeg" id="imgMove" />
+  </body>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      function animation() {
+        $("#imgMove").animate({ marginLeft: "400px" }, 5000, function () {
+          $("#imgMove").animate({ marginLeft: "-=400px" }, 5000, function () {
+            animation();
+          });
+        });
+      }
+      animation();
+    });
+  </script>
+</html>

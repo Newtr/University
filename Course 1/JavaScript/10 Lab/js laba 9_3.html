@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <title>Zad3</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="scs.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <div id="field">
+      <img src="download.jpg" width="20%" id="ball" style="width: 100px" />
+    </div>
+
+    <script>
+      var i = 0;
+      $(document).ready(function () {
+        $("[src='four.jpg']")
+          .css("position", "absolute")
+          .css("height", "100px");
+        function animate() {
+          $("#ball").animate(
+            {
+              top: 100 * Math.sin(i++ * 0.1),
+              left: "+=10",
+            },
+            100,
+            function () {
+              animate();
+            }
+          );
+        }
+        animate();
+      });
+      /*let plane = document.getElementById("ball");
+      console.log(plane);
+      plane.style.position = "absolute";
+      plane.style.height = "200px";
+      let x = 0;
+      let y;
+      let times = setInterval(move, 10);
+
+      function move() {
+        x++;
+        y = 80 * Math.sin(x * 0.03);
+        plane.style.top = y + "px";
+        plane.style.left = x + "px";
+        console.log(x);
+        if (x > 900) {
+          clearInterval(times);
+        }
+      }*/
+    </script>
+  </body>
+</html>

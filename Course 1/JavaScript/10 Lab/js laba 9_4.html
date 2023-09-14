@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Zad4</title>
+    <meta charset="utf-8" />
+    <style type="text/css">
+      canvas {
+        margin-left: 400px;
+      }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  </head>
+  <body>
+    <script>
+      document.write(
+        '<p><input type="radio" name="graph" value="Math.pow(x,2)" checked>y=x<sup>2</sup></p>'
+      );
+      document.write(
+        '<p><input type="radio" name="graph" value="Math.pow(x,3)">y=x<sup>3</sup></p>'
+      );
+      document.write(
+        '<p><input type="radio" name="graph" value="Math.sin(x)">y=sin(x)</p>'
+      );
+      document.write(
+        '<p><input type="radio" name="graph" value="Math.cos(x)">y=cos(x)</p>'
+      );
+      document.write("<select>");
+      document.write('<option name="colors" value="black">Черный</option>');
+      document.write('<option name="colors" value="blue">Синий</option>');
+      document.write('<option name="colors" value="brown">Коричневый</option>');
+      document.write('<option name="colors" value="green">Зеленый</option>');
+      document.write('<option name="colors" value="orange">Оранжевый</option>');
+      document.write('<option name="colors" value="pink">Розовый</option>');
+      document.write(
+        '<option name="colors" value="purple">Фиолетовый</option>'
+      );
+      document.write('<option name="colors" value="red">Красный</option>');
+      document.write('<option name="colors" value="yellow">Желтый</option>');
+      document.write("</select>");
+      $("body").append("<div>");
+      let rad = $("input");
+      console.log(rad);
+      let raf_1 = "";
+      let optionss = "";
+      setInterval(checkRadio, 100);
+
+      function checkRadio() {
+        let options = $("select");
+        let option = options[0].value;
+        if (optionss != option) {
+          optionss = option;
+          graphics(optionss, raf_1);
+        }
+        for (let i = 0; i < rad.length; i++) {
+          if (rad[i].checked) {
+            if (raf_1 != rad[i].value) {
+              raf_1 = rad[i].value;
+              graphics(optionss, raf_1);
+            }
+          }
+        }
+      }
+      function graphics(option, raf_1) {
+        xGraph = "";
+        let y;
+        var xGraph;
+        let xGraph0 =
+          '<img src="' +
+          option +
+          'Px.bmp" width=2px height=2px style = "position:absolute; top: ';
+        if (raf_1 == "Math.pow(x,2)" || raf_1 == "Math.pow(x,3)") {
+          for (let x = -20; x <= 20.01; x = x + 0.01) {
+            xGraph =
+              xGraph +
+              xGraph0 +
+              (-1 * eval(raf_1) + 1000) / 5 +
+              "px; left:" +
+              (700 + x) +
+              'px">';
+          }
+        } else {
+          for (let x = -50; x <= 50.01; x = x + 0.01) {
+            xGraph =
+              xGraph +
+              xGraph0 +
+              (-1 * eval(raf_1) + 20) * 10 +
+              "px; left:" +
+              (200 + x) * 5 +
+              'px">';
+          }
+        }
+        console.log(xGraph);
+        $("div").html(xGraph);
+      }
+    </script>
+  </body>
+</html>

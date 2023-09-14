@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Zad1</title>
+    <link rel="stylesheet" type="text/css" href="scs.css" />
+  </head>
+  <body>
+    <textarea id="dragThis">Кисамяу</textarea>
+    <img src="Cat_1.jpeg" id="dragI" />
+
+    <script type="text/javascript">
+      var dragImg = document.getElementById("dragThis");
+      dragImg.onmousedown = function (event) {
+        let shiftX = event.clientX - dragImg.getBoundingClientRect().left;
+        let shiftY = event.clientY - dragImg.getBoundingClientRect().top;
+
+        dragImg.style.position = "absolute";
+        dragImg.style.zIndex = 1000;
+        document.body.append(dragImg);
+
+        moveThis(event.pageX, event.pageY);
+
+        function moveThis(pageX, pageY) {
+          dragImg.style.left = pageX - shiftX + "px";
+          dragImg.style.top = pageY - shiftY + "px";
+        }
+
+        function onMouseMove(event) {
+          moveThis(event.pageX, event.pageY);
+        }
+
+        document.addEventListener("mousemove", onMouseMove);
+
+        dragImg.onmouseup = function () {
+          document.removeEventListener("mousemove", onMouseMove);
+          dragImg.onmouseup = null;
+        };
+      };
+      dragImg.ondragstart = function () {
+        return false;
+      };
+    </script>
+    <script type="text/javascript">
+      var dragc = document.getElementById("dragI");
+      dragc.onmousedown = function (event) {
+        let shiftX = event.clientX - dragc.getBoundingClientRect().left;
+        let shiftY = event.clientY - dragc.getBoundingClientRect().top;
+
+        dragc.style.position = "absolute";
+        dragc.style.zIndex = 1000;
+        document.body.append(dragc);
+
+        moveThis(event.pageX, event.pageY);
+
+        function moveThis(pageX, pageY) {
+          dragc.style.left = pageX - shiftX + "px";
+          dragc.style.top = pageY - shiftY + "px";
+        }
+
+        function onMouseMove(event) {
+          moveThis(event.pageX, event.pageY);
+        }
+
+        document.addEventListener("mousemove", onMouseMove);
+
+        dragc.onmouseup = function () {
+          document.removeEventListener("mousemove", onMouseMove);
+          dragc.onmouseup = null;
+        };
+      };
+      dragc.ondragstart = function () {
+        return false;
+      };
+    </script>
+  </body>
+</html>

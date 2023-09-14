@@ -1,0 +1,27 @@
+h1{
+font-style: oblique;
+font-family: Comic Sans MS;
+color: #007058;
+}
+input {
+border: 5px solid lightblue;
+border-radius: 20px;
+background-color: yellow;
+padding: 10px;
+}
+table {
+	width: 20%;
+	border-collapse: collapse;
+	text-align: center;
+	font-size: 15px;
+	margin-top: 10px;
+}
+td {
+	border: 1px solid black;
+	padding: 12px;
+}
+img{
+	width:20%;
+	position: absolute;
+	margin-top:400px;
+}
