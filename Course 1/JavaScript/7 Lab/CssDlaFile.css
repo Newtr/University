@@ -1,0 +1,19 @@
+#textarea{
+    width: 150px;
+    height: 50px;
+    text-align: left;
+    font-weight: bold;
+}
+#first{
+    margin-bottom: 20px;
+}
+#Second{
+    margin-top: 5px;
+}
+#check{
+    margin-right: 5px;
+    margin-bottom: 15px;
+}
+#submit,#reset{
+    margin-bottom: 10px;
+}

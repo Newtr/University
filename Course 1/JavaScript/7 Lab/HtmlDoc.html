@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<br lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="CssDlaFile.css" rel="stylesheet">
+    <title>1</title>
+</head>
+<body>
+    <form name="data">
+        <textarea id="textarea" name="textarea">Факультет информационных технологий</textarea></br>
+        <input type="text" name="FirstName" value="Имя"></form>
+        <input type="text" name="SecondName" value="Фамилия" id="surname"></br>
+        <b>Специальность</b>   <select name="Vybor" id="spec">
+            <option value="ПОИТ">ПОИТ</option>
+            <option value="ИСиТ">ИСиТ</option>
+            <option value="ПОИТ">ПОИТ</option>
+            <option value="ПОИБМС">ПОИБМС</option>
+            <option value="ДЭВИ">ДЭВИ</option>
+        </select></br>
+        Курс</br>
+        <input type="radio" name="rad" value="1" class="radioVybor"/>1
+        <input type="radio" name="rad" value="2" class="radioVybor"/>2
+        <input type="radio" name="rad" value="3" class="radioVybor"/>3
+        <input type="radio" name="rad" value="4" class="radioVybor"/>4</br>
+        Предметы </br>
+        <input type="checkbox" name="check" value="ОАИП" class="checkVybor" id="chek1"/>ОАИП
+        <input type="checkbox" name="check" value="ОАП"class="checkVybor" id="chek2"/>ОАП
+        <input type="checkbox" name="check" value="История"class="checkVybor" id="chek3"/>История
+        <input type="checkbox" name="check" value="Физика"class="checkVybor" id="chek4"/>Физика
+        <input type="checkbox" name="check" value="Математика"class="checkVybor" id="chek5"/>Математика</br>
+        <input type="submit" name="submit" value="submit" id="submit">
+        <input type="reset" name="reset" value="reset" id="reset"></br>
+        <input type="button" name="pechat" value="Напечатать" id="pechat" onclick="pechat()"></br>
+    </form>
+    <script src="jsDlaHtml.jsx"></script>
+</body>
+</html>
