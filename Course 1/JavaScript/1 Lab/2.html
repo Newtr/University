@@ -1,0 +1,34 @@
+<DOCTYPE HTML>
+<html>
+<meta charset='UTF-8'>
+<head>
+<script type='text/javascript'>
+function fun1() {
+let x = 10, y = 5;
+alert( y + x );
+}
+function fun2() {
+let a = '10' + '5';
+alert(a);
+}
+function fun3() {
+let b = 22 + '5';
+alert(b);
+}
+function fun4() {
+let c = '22' + 5;
+alert(c);
+}
+function fun5() {
+alert('Результатом сложения строки и числа всегда будет строка');
+}
+</script>
+</head>
+<body>
+<input type='button' value='1' onclick='fun1()' />
+<input type='button' value='2' onclick='fun2()' />
+<input type='button' value='3' onclick='fun3()' />
+<input type='button' value='4' onclick='fun4()' />
+<input type='button' value='5' onclick='fun5()' />
+</body>
+</html>

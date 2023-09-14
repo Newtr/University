@@ -1,0 +1,30 @@
+<DOCTYPE HTML>
+<html>
+<meta charset='UTF-8'>
+<head>
+<script type='text/javascript'>
+function fun1() {
+alert('Вас приветствует учебный центр');
+}
+function fun2() {
+let x=prompt('Введите имя:', 'Имя');
+document.write('Добро пожаловать на наши курсы, '+ x);
+}
+function fun3() {
+let y=confirm('Хотите стать Web-дизайнером?');
+if (y==true)
+{document.write('Учите стили CSSи JavaScript!');
+}
+else
+{document.write('Упускаете время!');
+}
+}
+</script>
+</head>
+<body>
+<input type='button' value='Окно оповещения' onclick='fun1()' />
+<input type='button' value='123' onclick='fun3()' />
+<input type='button' value='Окно запроса' onclick='fun2()' />
+</body>
+</html>
+

@@ -1,0 +1,36 @@
+<DOCTYPE HTML>
+<html>
+<meta charset='UTF-8'>
+<head>
+<script type='text/javascript'>
+function fun3(){
+    let d = new Date();
+document.write('Сегодня ' + d.getDay());
+if (d.getDay()== 0) {
+document.write('Воскресенье');
+}
+if (d.getDay()==1) {
+document.write('Понедельник');
+}
+if (d.getDay()==2) {
+document.write('Вторник');
+}
+if (d.getDay() == 3) {
+document.write('Среда');
+}
+if (d.getDay()==4) {
+document.write('Четверг');
+}
+if (d.getDay()==5) {
+document.write('Пятница');
+}
+if (d.getDay()==6) {
+document.write('Суббота');
+}
+}
+</script>
+</head>
+<body>
+<input type='button' value='Задание 6' onclick='fun3()' />
+</body>
+</html>
