@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>1</title>
+    <script>
+        var Zz = new Array();
+        Zz[0] = 6*Math.pow(Math.PI,2)+3*Math.pow(Math.E,8);
+        Zz[1] = 2*Math.cos(4)+Math.cos(12)+8*Math.pow(Math.E,3);
+        Zz[2] = 3*Math.sin(9)+Math.log10(5)+Math.sqrt(3);
+        Zz[3] = 2*Math.tan(5)+6*Math.PI+Math.sqrt(12);
+        let t1= Zz[0];
+        let t2= Zz[1];
+        let t3= Zz[2];
+        let t4= Zz[3];
+        function compareNumbers(a,b){
+            return a-b; //сортировка по возрастанию [0] - min [3] - max
+        }
+        Zz.sort(compareNumbers);
+        let min = Zz[0];
+        let max = Zz[3];
+        //document.write(t1.toFixed(1)+"</br>");
+        //document.write(t2.toFixed(1)+"</br>");
+        //document.write(t3.toFixed(1)+"</br>");
+        //document.write(t4.toFixed(1)+"</br>");
+        //document.write(Zz + "</br>");
+        document.write("Максимальный элемент массива равен = " +max.toFixed(1) + " №0" +"</br>")
+        document.write("Минимальный элемент массива равен = " +min.toFixed(1) + " №3" +"</br>")
+    </script>
+</head>
+<body>
+</body>
+</html>	

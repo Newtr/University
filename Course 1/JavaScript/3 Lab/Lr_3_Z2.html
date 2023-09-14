@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>2</title>
+    <script>
+    var Rr = ["pop","push","shift","sline","sort","round","floor","pow"]
+    var Ee = Rr.slice(0,5); // pop push shift sline sort [0,0)
+    var Tt = Rr.slice(5); // round floor pow
+    Ee.unshift("concast"); // добавляем в начало
+    Tt.push("random"); // добавляем в конец
+    document.write("Исходный массив = " + Rr + " Длина массива = "+ Rr.length + "</br>");
+    document.write("Массив из методов Array = "+ Ee + " Длина массива = "+ Ee.length + "</br>");
+    document.write("Массив из методов Math = "+Tt +" Длина массива = "+Tt.length+ "</br>");
+    </script>
+</head>
+<body>
+</body>
+</html>

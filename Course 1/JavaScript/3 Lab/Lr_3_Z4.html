@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>4</title>
+    <script>
+        let month_date = new Date();
+        let month = month_date.getMonth();
+        let day_date = new Date();
+        let day = {weekday:"long"};
+        let hours_date = new Date();
+        let hours = hours_date.getHours();
+        let minuts_date = new Date();
+        let minuts = minuts_date.getMinutes();
+        let sec_date = new Date();
+        let sec = sec_date.getSeconds();
+        document.write("<table border='1'>")
+            document.write("<th>Год</th>")
+            document.write("<th>2017</th>")
+            document.write("<tr>")
+                document.write("<td>Месяц</td>")
+                document.write("<td>"+month+"</td>")
+            document.write("</tr>")
+            document.write("<tr>")
+                document.write("<td>День</td>")
+                document.write("<td>"+(new Intl.DateTimeFormat("ru-RU",day,{daystyle:"full"}).format(day_date))+"</td>")
+            document.write("</tr>")
+            document.write("<tr>")
+                document.write("<td>Час</td>")
+                document.write("<td>"+hours+"</td>")
+            document.write("</tr>")
+            document.write("<tr>")
+                document.write("<td>Минута</td>")
+                document.write("<td>"+minuts+"</td>")
+            document.write("</tr>")
+            document.write("<tr>")
+                document.write("<td>Секунда</td>")
+                document.write("<td>"+sec+"</td>")
+        document.write("</table>")
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
