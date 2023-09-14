@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script>
+    var Rr = ["pop","push","shift","sline","sort","round","floor","pow"]
+    document.write("Исходный массив -> " +Rr +"</br>");
+    delete Rr[3];
+    document.write("Массив после удаление 3-его элемента -> " +Rr+"</br>");
+    document.write("Правда ли что у массива есть 2-ой элемент? ", 2 in Rr,"</br>");
+    document.write("Является ли Rr массивом? ",Rr instanceof Array,"</br>");
+    document.write("Является ли Rr объектом String? ",Rr instanceof String,"</br>");
+    document.write("Является ли Rr объектом Objesct? ",Rr instanceof Object,"</br>");
+    function fun(){
+        return 5;
+    }
+    document.write("К какому типо относиться fun? ",typeof fun,"</br>");
+    document.write("К какому типо относиться Rr ",typeof Rr,"</br>");
+    </script>
+    <title>3</title>
+</head>
+<body>
+</body>
+</html>

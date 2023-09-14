@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script>
+        function Gruppa(n,spec,kolich){
+            this.n=n;
+            this.spec=spec;
+            this.kolich=kolich;
+            this.sub_stud=function sub_stud(k){
+                this.kolich-=k;
+                document.write('Исключить из ' + this.n + ' группы '+ k + ' студентов.<br\>');
+        }
+            this.add_stud=function add_stud(g){
+                this.kolich+=g;
+                document.write('В группу ' + this.n + ' добавили '+ g + ' студентов.<br\>');
+        }
+    }
+        gr2 = new Gruppa(2, 'ПОИБМС', 30);
+        gr2.add_stud(5);
+        gr3 = new Gruppa(3,"ИСИТ",29);
+        gr3.sub_stud(3);
+        gr4 = new Gruppa(4,"ПОИТ",28);
+        gr4.sub_stud(1);
+    document.write("1 группа = "+gr2.kolich, " 2 группа ="+gr3.kolich," 3 группа ="+gr4.kolich+"</br>");
+    document.write("Правда ли что во 2-ой группе ПОИБМС учиться +- 30 человек? ", "kolich" in gr2,"</br>")
+    document.write("Перечисление к каким типам относятся свойства Gruppa: ",typeof gr2.n,", ",typeof gr2.spec,", ",typeof gr2.kolich,", ");
+    </script>
+    <title>1</title>
+</head>
+<body>
+</body>
+</html>

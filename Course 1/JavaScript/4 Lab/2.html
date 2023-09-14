@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script>
+        function Student(name,surname,fiz,math,inform){
+            this.name=name;
+            this.surname=surname;
+            this.fiz=fiz;
+            this.math=math;
+            this.inform=inform;
+            this.sred_bal = (this.fiz + this.math + this.inform)/3;
+            document.write(" "+this.name+" "+this.surname+" "+this.sred_bal.toFixed(1) + " "+"</br>")
+        }
+        Student.prototype.uva = this.uva;
+        std1 = new Student("Илья","Потапов",8,8,2);
+        std1.uva = "Уважает Жиляк";
+        std2 = new Student("Никита","Нарстюк",5,9,6);
+        std2.uva = "Уважает Жиляк";
+        std3 = new Student("Максим","Глебенко",9,9,9);
+        std3.uva = "Не уважает Жиляк";
+        document.write(std1.name+" "+std1.uva+", "+std2.name+" "+std2.uva+", "+std3.name+" "+std3.uva+"</br>")
+        document.write("Правда что у все студенты имеют имя? ", "name"in Student,"</br>")
+        document.write("Перечисление к каким типам относятся свойства Student: ",typeof std1.name,", ",typeof std1.surname,", ",typeof std1.sred_bal,", ");
+    </script>
+    <title>2</title>
+</head>
+<body>
+</body>
+</html>
