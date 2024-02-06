@@ -1,0 +1,15 @@
+﻿  stdafx.cpp
+  ChildView.cpp
+  CMatrix.cpp
+  Lab01.cpp
+  LibGraph.cpp
+D:\Документы БГТУ\2.ОКГ\1_Lab\l1\lab1\Lab01\LibGraph.cpp(15,60): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+D:\Документы БГТУ\2.ОКГ\1_Lab\l1\lab1\Lab01\LibGraph.cpp(15,57): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+D:\Документы БГТУ\2.ОКГ\1_Lab\l1\lab1\Lab01\LibGraph.cpp(15,30): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+D:\Документы БГТУ\2.ОКГ\1_Lab\l1\lab1\Lab01\LibGraph.cpp(15,18): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+D:\Документы БГТУ\2.ОКГ\1_Lab\l1\lab1\Lab01\LibGraph.cpp(28,9): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+D:\Документы БГТУ\2.ОКГ\1_Lab\l1\lab1\Lab01\LibGraph.cpp(28,6): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+  MainFrm.cpp
+  Создание кода...
+D:\Документы БГТУ\2.ОКГ\1_Lab\l1\lab1\Lab01\LibGraph.cpp(38): warning C4715: ControllerCMatrix::ScalarMult: значение возвращается не при всех путях выполнения
+  Lab01.vcxproj -> D:\Документы БГТУ\2.ОКГ\1_Lab\l1\lab1\x64\Debug\Lab01.exe
