@@ -1,0 +1,83 @@
+<mxfile host="app.diagrams.net" modified="2023-11-26T09:19:06.618Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="dPYFWOvYNqswJFumCDgs" version="22.1.4" type="device">
+  <diagram name="Страница — 1" id="zVMX8pp5z08NAUYNwmXa">
+    <mxGraphModel dx="1400" dy="765" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="3V1n29W3ZNlLV-hattE4-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" edge="1" parent="1" source="3V1n29W3ZNlLV-hattE4-3" target="3V1n29W3ZNlLV-hattE4-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3V1n29W3ZNlLV-hattE4-2" value="протокол&lt;br&gt;HTTPS" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="3V1n29W3ZNlLV-hattE4-1">
+          <mxGeometry x="0.0877" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3V1n29W3ZNlLV-hattE4-3" value="" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;flipH=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="230" width="360" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="3V1n29W3ZNlLV-hattE4-4" value="&amp;lt;&amp;lt;устройство&amp;gt;&amp;gt;&lt;br&gt;ПК/ноутбук" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="40" y="250" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3V1n29W3ZNlLV-hattE4-5" value="" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;flipH=1;" vertex="1" parent="1">
+          <mxGeometry x="62" y="300" width="280" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="3V1n29W3ZNlLV-hattE4-6" value="&amp;lt;&amp;lt;среда выполнения&amp;gt;&amp;gt;&lt;br&gt;ОС Windows" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="57" y="320" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3V1n29W3ZNlLV-hattE4-7" value="&amp;lt;&amp;lt;компонент&amp;gt;&amp;gt;&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;C#-приложение" style="html=1;dropTarget=0;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="99" y="370" width="180" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="3V1n29W3ZNlLV-hattE4-8" value="" style="shape=module;jettyWidth=8;jettyHeight=4;" vertex="1" parent="3V1n29W3ZNlLV-hattE4-7">
+          <mxGeometry x="1" width="20" height="20" relative="1" as="geometry">
+            <mxPoint x="-27" y="7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3V1n29W3ZNlLV-hattE4-9" value="" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;flipH=1;" vertex="1" parent="1">
+          <mxGeometry x="470" y="230" width="360" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="3V1n29W3ZNlLV-hattE4-10" value="&amp;lt;&amp;lt;устройство&amp;gt;&amp;gt;&lt;br&gt;сервер приложения" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="470" y="250" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3V1n29W3ZNlLV-hattE4-11" value="" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;flipH=1;" vertex="1" parent="1">
+          <mxGeometry x="502" y="300" width="280" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="3V1n29W3ZNlLV-hattE4-12" value="&amp;lt;&amp;lt;среда выполнения&amp;gt;&amp;gt;&lt;br&gt;ASP.NET" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="501" y="320" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3V1n29W3ZNlLV-hattE4-13" value="&amp;lt;&amp;lt;компонент&amp;gt;&amp;gt;&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;контроллер" style="html=1;dropTarget=0;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="545" y="370" width="180" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="3V1n29W3ZNlLV-hattE4-14" value="" style="shape=module;jettyWidth=8;jettyHeight=4;" vertex="1" parent="3V1n29W3ZNlLV-hattE4-13">
+          <mxGeometry x="1" width="20" height="20" relative="1" as="geometry">
+            <mxPoint x="-27" y="7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3V1n29W3ZNlLV-hattE4-15" value="" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;flipH=1;" vertex="1" parent="1">
+          <mxGeometry x="467" y="548" width="360" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="3V1n29W3ZNlLV-hattE4-16" value="&amp;lt;&amp;lt;устройство&amp;gt;&amp;gt;&lt;br&gt;сервер БД" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="467" y="567" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3V1n29W3ZNlLV-hattE4-17" value="" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;flipH=1;" vertex="1" parent="1">
+          <mxGeometry x="497" y="617" width="280" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="3V1n29W3ZNlLV-hattE4-18" value="&amp;lt;&amp;lt;среда выполнения&amp;gt;&amp;gt;&lt;br&gt;Microsoft SQL Server" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="544" y="642" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3V1n29W3ZNlLV-hattE4-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0;entryDx=170;entryDy=0;entryPerimeter=0;endArrow=none;endFill=0;" edge="1" parent="1" source="3V1n29W3ZNlLV-hattE4-11" target="3V1n29W3ZNlLV-hattE4-15">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="580" y="520" />
+              <mxPoint x="657" y="520" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3V1n29W3ZNlLV-hattE4-22" value="протокол&lt;br&gt;TCP/IP" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="540.9977777777779" y="479.9999999999999" as="geometry">
+            <mxPoint x="80" y="20" as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
