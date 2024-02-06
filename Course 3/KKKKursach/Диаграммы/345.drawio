@@ -1,0 +1,168 @@
+<mxfile host="Electron" modified="2023-12-21T10:55:29.146Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.1.2 Chrome/114.0.5735.289 Electron/25.9.4 Safari/537.36" etag="Tfhbo8VAoucppl4y5oXD" version="22.1.2" type="device">
+  <diagram name="Страница — 1" id="JskE_W5221Kw5uckJdxN">
+    <mxGraphModel dx="209" dy="614" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ff88zPoke-WIpQn8Iawk-1" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
+          <mxGeometry x="955" y="140" width="520" height="630" as="geometry" />
+        </mxCell>
+        <mxCell id="ff88zPoke-WIpQn8Iawk-2" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" edge="1" parent="1" source="ff88zPoke-WIpQn8Iawk-4" target="ff88zPoke-WIpQn8Iawk-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ff88zPoke-WIpQn8Iawk-3" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" edge="1" parent="1" source="ff88zPoke-WIpQn8Iawk-4" target="ff88zPoke-WIpQn8Iawk-45">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ff88zPoke-WIpQn8Iawk-4" value="Пользователь" style="shape=umlActor;verticalLabelPosition=top;verticalAlign=bottom;html=1;outlineConnect=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;labelPosition=center;align=center;" vertex="1" parent="1">
+          <mxGeometry x="898" y="202" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ff88zPoke-WIpQn8Iawk-5" value="Администратор" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
+          <mxGeometry x="1526" y="322" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ff88zPoke-WIpQn8Iawk-8" value="&lt;font style=&quot;font-size: 8px;&quot;&gt;Работа с библиотеками игр&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
+          <mxGeometry x="1400" y="220" width="70" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ff88zPoke-WIpQn8Iawk-9" value="Работа с помощником" style="text;html=1;align=center;verticalAlign=middle;resizable=1;points=[];autosize=1;strokeColor=none;fillColor=none;movable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
+          <mxGeometry x="951" y="160" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ff88zPoke-WIpQn8Iawk-10" value="" style="endArrow=none;html=1;rounded=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" edge="1" parent="1" source="ff88zPoke-WIpQn8Iawk-8" target="ff88zPoke-WIpQn8Iawk-5">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1396" y="452" as="sourcePoint" />
+            <mxPoint x="1446" y="402" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ff88zPoke-WIpQn8Iawk-12" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=0;dashed=1;dashPattern=8 8;" edge="1" parent="1" source="ff88zPoke-WIpQn8Iawk-15" target="ff88zPoke-WIpQn8Iawk-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ff88zPoke-WIpQn8Iawk-13" value="&lt;font style=&quot;font-size: 8px;&quot;&gt;&amp;lt;&amp;lt;include&amp;gt;&amp;gt;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ff88zPoke-WIpQn8Iawk-12">
+          <mxGeometry x="-0.0712" y="-2" relative="1" as="geometry">
+            <mxPoint x="-3" y="-3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ff88zPoke-WIpQn8Iawk-14" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=8 8;" edge="1" parent="1" source="ff88zPoke-WIpQn8Iawk-15" target="ff88zPoke-WIpQn8Iawk-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ff88zPoke-WIpQn8Iawk-15" value="&lt;span style=&quot;font-size: 8px;&quot;&gt;Работа с игрой&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
+          <mxGeometry x="1370" y="317" width="90" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="ff88zPoke-WIpQn8Iawk-16" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="ff88zPoke-WIpQn8Iawk-15" target="ff88zPoke-WIpQn8Iawk-5">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1460" y="492" as="sourcePoint" />
+            <mxPoint x="1510" y="442" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ff88zPoke-WIpQn8Iawk-17" value="&lt;span style=&quot;font-size: 8px;&quot;&gt;Просмотр игр&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
+          <mxGeometry x="1180" y="180" width="70" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ff88zPoke-WIpQn8Iawk-18" value="&lt;font style=&quot;font-size: 8px;&quot;&gt;Добавление в библиотеку&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
+          <mxGeometry x="1216" y="250" width="70" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ff88zPoke-WIpQn8Iawk-19" value="" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="ff88zPoke-WIpQn8Iawk-17" target="ff88zPoke-WIpQn8Iawk-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1030" y="512" as="sourcePoint" />
+            <mxPoint x="1080" y="462" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ff88zPoke-WIpQn8Iawk-20" value="&lt;span style=&quot;font-size: 8px;&quot;&gt;Добавление новой игры&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
+          <mxGeometry x="1326" y="447" width="70" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ff88zPoke-WIpQn8Iawk-21" value="&lt;span style=&quot;font-size: 8px;&quot;&gt;Редактирование игры&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
+          <mxGeometry x="1280" y="400" width="70" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ff88zPoke-WIpQn8Iawk-22" value="&lt;font style=&quot;font-size: 8px;&quot;&gt;&amp;lt;&amp;lt;include&amp;gt;&amp;gt;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];rotation=0;" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="1388.0023613166645" y="413.99827670065815" as="geometry">
+            <mxPoint x="-2" y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ff88zPoke-WIpQn8Iawk-23" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=8 8;exitX=0.648;exitY=0.999;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="ff88zPoke-WIpQn8Iawk-15" target="ff88zPoke-WIpQn8Iawk-24">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1373" y="362" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ff88zPoke-WIpQn8Iawk-24" value="&lt;font style=&quot;font-size: 8px;&quot;&gt;Удаление старой игры&lt;br&gt;&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
+          <mxGeometry x="1400" y="440" width="70" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ff88zPoke-WIpQn8Iawk-25" value="&lt;font style=&quot;font-size: 8px;&quot;&gt;&amp;lt;&amp;lt;include&amp;gt;&amp;gt;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];rotation=0;" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="1435.0023613166645" y="413.99827670065815" as="geometry">
+            <mxPoint x="-2" y="-5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ff88zPoke-WIpQn8Iawk-26" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="ff88zPoke-WIpQn8Iawk-17" target="ff88zPoke-WIpQn8Iawk-5">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1190" y="562" as="sourcePoint" />
+            <mxPoint x="1240" y="512" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ff88zPoke-WIpQn8Iawk-28" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" edge="1" parent="1" source="ff88zPoke-WIpQn8Iawk-32" target="ff88zPoke-WIpQn8Iawk-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ff88zPoke-WIpQn8Iawk-29" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=8;" vertex="1" connectable="0" parent="ff88zPoke-WIpQn8Iawk-28">
+          <mxGeometry x="0.0056" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ff88zPoke-WIpQn8Iawk-30" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" edge="1" parent="1" source="ff88zPoke-WIpQn8Iawk-32" target="ff88zPoke-WIpQn8Iawk-46">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ff88zPoke-WIpQn8Iawk-31" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=8;" vertex="1" connectable="0" parent="ff88zPoke-WIpQn8Iawk-30">
+          <mxGeometry x="0.0261" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ff88zPoke-WIpQn8Iawk-32" value="&lt;span style=&quot;font-size: 8px;&quot;&gt;Просмотр игр&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
+          <mxGeometry x="1096" y="290" width="70" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ff88zPoke-WIpQn8Iawk-45" value="&lt;span style=&quot;font-size: 8px;&quot;&gt;Обновление системных компонентов&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="365" width="70" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ff88zPoke-WIpQn8Iawk-46" value="&lt;span style=&quot;font-size: 8px;&quot;&gt;Оценка игры&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
+          <mxGeometry x="1207" y="332" width="70" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ff88zPoke-WIpQn8Iawk-47" value="&lt;font style=&quot;font-size: 8px;&quot;&gt;Написание заметок&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
+          <mxGeometry x="1152.34" y="385" width="70" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ff88zPoke-WIpQn8Iawk-48" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" edge="1" parent="1" source="ff88zPoke-WIpQn8Iawk-32" target="ff88zPoke-WIpQn8Iawk-47">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1099.34" y="440" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ff88zPoke-WIpQn8Iawk-49" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=8;" vertex="1" connectable="0" parent="ff88zPoke-WIpQn8Iawk-48">
+          <mxGeometry x="0.0056" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ff88zPoke-WIpQn8Iawk-50" value="&lt;font style=&quot;font-size: 8px;&quot;&gt;Регистрация&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
+          <mxGeometry x="1121" y="447" width="70" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ff88zPoke-WIpQn8Iawk-51" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" edge="1" parent="1" source="ff88zPoke-WIpQn8Iawk-55" target="ff88zPoke-WIpQn8Iawk-50">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ff88zPoke-WIpQn8Iawk-52" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=8;" vertex="1" connectable="0" parent="ff88zPoke-WIpQn8Iawk-51">
+          <mxGeometry x="0.0056" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ff88zPoke-WIpQn8Iawk-53" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" edge="1" parent="1" source="ff88zPoke-WIpQn8Iawk-55" target="ff88zPoke-WIpQn8Iawk-56">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ff88zPoke-WIpQn8Iawk-54" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=8;" vertex="1" connectable="0" parent="ff88zPoke-WIpQn8Iawk-53">
+          <mxGeometry x="0.0261" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ff88zPoke-WIpQn8Iawk-55" value="&lt;span style=&quot;font-size: 8px;&quot;&gt;Вход в систему&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
+          <mxGeometry x="1001" y="487" width="70" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ff88zPoke-WIpQn8Iawk-56" value="&lt;font style=&quot;font-size: 8px;&quot;&gt;Авторизация&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
+          <mxGeometry x="1112" y="529" width="70" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ff88zPoke-WIpQn8Iawk-57" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;entryX=0.269;entryY=0.08;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="ff88zPoke-WIpQn8Iawk-55">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="938" y="248" as="sourcePoint" />
+            <mxPoint x="1110" y="313" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
