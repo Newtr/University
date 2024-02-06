@@ -1,0 +1,9 @@
+﻿  CMatrix.cpp
+  Functions.cpp
+  _WIN32_WINNT not defined. Defaulting to _WIN32_WINNT_MAXVER (see WinSDKVer.h)
+  main.cpp
+  _WIN32_WINNT not defined. Defaulting to _WIN32_WINNT_MAXVER (see WinSDKVer.h)
+D:\Документы БГТУ\2.ОКГ\2.2_Lab\Lab_02_02\2.2\lab2.2\main.cpp(90,8): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+D:\Документы БГТУ\2.ОКГ\2.2_Lab\Lab_02_02\2.2\lab2.2\main.cpp(114,8): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+  Создание кода...
+  lab2.2.vcxproj -> D:\Документы БГТУ\2.ОКГ\2.2_Lab\Lab_02_02\2.2\Debug\lab2.2.exe
