@@ -1,0 +1,54 @@
+-- Создание типа данных для "Собеседования"
+CREATE OR REPLACE TYPE t_Собеседование AS OBJECT (
+    ИДЕНТИФИКАТОР_СОБЕСЕДОВАНИЯ NUMBER,
+    ИДЕНТИФИКАТОР_ВАКАНСИИ NUMBER,
+    ИМЯ_КАНДИДАТА VARCHAR2(255 BYTE),
+    ДАТА_СОБЕСЕДОВАНИЯ DATE,
+    РЕЗУЛЬТАТ_СОБЕСЕДОВАНИЯ VARCHAR2(255 BYTE),
+    СОТРУДНИК_ПРИНИМАВШИЙ_СОБЕСЕДОВАНИЕ VARCHAR2(255 BYTE),
+    -- Дополнительный конструктор
+    CONSTRUCTOR FUNCTION t_Собеседование(SELF IN OUT NOCOPY t_Собеседование, ИМЯ_КАНДИДАТА VARCHAR2, ДАТА_СОБЕСЕДОВАНИЯ DATE, РЕЗУЛЬТАТ_СОБЕСЕДОВАНИЯ VARCHAR2) RETURN SELF AS RESULT,
+    -- Метод сравнения типа MAP
+    MAP MEMBER FUNCTION get_id RETURN NUMBER,
+    -- Метод экземпляра функцию
+    MEMBER FUNCTION get_full_info RETURN VARCHAR2,
+    -- Метод экземпляра процедуру
+    MEMBER PROCEDURE print_details (self IN OUT NOCOPY t_Собеседование),
+    --Детерминированная функция
+    MEMBER FUNCTION get_result RETURN VARCHAR2 DETERMINISTIC
+);
+/
+CREATE OR REPLACE TYPE BODY t_Собеседование AS
+    -- Реализация дополнительного конструктора
+    CONSTRUCTOR FUNCTION t_Собеседование(SELF IN OUT NOCOPY t_Собеседование, ИМЯ_КАНДИДАТА VARCHAR2, ДАТА_СОБЕСЕДОВАНИЯ DATE, РЕЗУЛЬТАТ_СОБЕСЕДОВАНИЯ VARCHAR2) RETURN SELF AS RESULT IS
+    BEGIN
+        SELF.ИМЯ_КАНДИДАТА := ИМЯ_КАНДИДАТА;
+        SELF.ДАТА_СОБЕСЕДОВАНИЯ := ДАТА_СОБЕСЕДОВАНИЯ;
+        SELF.РЕЗУЛЬТАТ_СОБЕСЕДОВАНИЯ := РЕЗУЛЬТАТ_СОБЕСЕДОВАНИЯ;
+        RETURN;
+    END;
+    -- Реализация метода сравнения типа MAP
+    MAP MEMBER FUNCTION get_id RETURN NUMBER IS
+    BEGIN
+        RETURN ИДЕНТИФИКАТОР_СОБЕСЕДОВАНИЯ;
+    END;
+    -- Реализация метода экземпляра функцию
+    MEMBER FUNCTION get_full_info RETURN VARCHAR2 IS
+    BEGIN
+        RETURN ИМЯ_КАНДИДАТА || ' (' || TO_CHAR(ДАТА_СОБЕСЕДОВАНИЯ, 'DD-MM-YYYY') || ', ' || РЕЗУЛЬТАТ_СОБЕСЕДОВАНИЯ || ')';
+    END;
+    -- Реализация метода экземпляра процедуру
+    MEMBER PROCEDURE print_details IS
+    BEGIN
+        DBMS_OUTPUT.PUT_LINE('Имя кандидата: ' || ИМЯ_КАНДИДАТА);
+        DBMS_OUTPUT.PUT_LINE('Дата собеседования: ' || TO_CHAR(ДАТА_СОБЕСЕДОВАНИЯ, 'DD-MM-YYYY'));
+        DBMS_OUTPUT.PUT_LINE('Результат собеседования: ' || РЕЗУЛЬТАТ_СОБЕСЕДОВАНИЯ);
+    END;
+    --Реализаация детерминированной функции
+    MEMBER FUNCTION get_result RETURN VARCHAR2 DETERMINISTIC IS
+    BEGIN
+        -- Возвращаем РОЛЬ в качестве роли сотрудника
+        RETURN РЕЗУЛЬТАТ_СОБЕСЕДОВАНИЯ;
+    END;
+END;
+/

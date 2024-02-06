@@ -1,0 +1,20 @@
+SELECT *
+FROM (
+  SELECT s.нрдек, EXTRACT(MONTH FROM c.дюрю_янаеяеднбюмхъ) AS леяъж, COUNT(*) OVER (PARTITION BY s.нрдек, EXTRACT(MONTH FROM c.дюрю_янаеяеднбюмхъ)) AS йнкхвеярбн_янаеяеднбюмхи
+  FROM ЯНАЕЯЕДНБЮМХЪ c
+  JOIN ЯНРПСДМХЙХ s ON c.янрпсдмхй_опхмхлюбьхи_янаеяеднбюмхе = s.тхн_янрпсдмхйю
+)
+MATCH_RECOGNIZE (
+  PARTITION BY нрдек
+  ORDER BY леяъж
+  MEASURES
+    STARTUP.йнкхвеярбн_янаеяеднбюмхи AS start_qty,
+    DOWN.йнкхвеярбн_янаеяеднбюмхи AS down_qty,
+    UP.йнкхвеярбн_янаеяеднбюмхи AS up_qty
+  ONE ROW PER MATCH
+  AFTER MATCH SKIP TO LAST UP
+  PATTERN (STARTUP DOWN+ UP+)
+  DEFINE
+    DOWN AS DOWN.йнкхвеярбн_янаеяеднбюмхи < PREV(DOWN.йнкхвеярбн_янаеяеднбюмхи),
+    UP AS UP.йнкхвеярбн_янаеяеднбюмхи > PREV(UP.йнкхвеярбн_янаеяеднбюмхи)
+)

@@ -1,0 +1,37 @@
+SELECT 
+    'Месяц' AS Период,
+    TO_CHAR(Дата_собеседования, 'MM') AS Интервал,
+    COUNT(*) AS Общее_количество_собеседований,
+    SUM(CASE WHEN Результат_собеседования IN ('Прошел', 'Прошла') THEN 1 ELSE 0 END) AS Успешные_наймы
+FROM Собеседования
+GROUP BY TO_CHAR(Дата_собеседования, 'MM')
+
+UNION ALL
+
+SELECT 
+    'Квартал',
+    TO_CHAR(Дата_собеседования, 'Q'),
+    COUNT(*),
+    SUM(CASE WHEN Результат_собеседования IN ('Прошел', 'Прошла') THEN 1 ELSE 0 END)
+FROM Собеседования
+GROUP BY TO_CHAR(Дата_собеседования, 'Q')
+
+UNION ALL
+
+SELECT 
+    'Полугодие',
+    CASE WHEN TO_CHAR(Дата_собеседования, 'MM') BETWEEN '01' AND '06' THEN '1' ELSE '2' END,
+    COUNT(*),
+    SUM(CASE WHEN Результат_собеседования IN ('Прошел', 'Прошла') THEN 1 ELSE 0 END)
+FROM Собеседования
+GROUP BY CASE WHEN TO_CHAR(Дата_собеседования, 'MM') BETWEEN '01' AND '06' THEN '1' ELSE '2' END
+
+UNION ALL
+
+SELECT 
+    'Год',
+    TO_CHAR(Дата_собеседования, 'YYYY'),
+    COUNT(*),
+    SUM(CASE WHEN Результат_собеседования IN ('Прошел', 'Прошла') THEN 1 ELSE 0 END)
+FROM Собеседования
+GROUP BY TO_CHAR(Дата_собеседования, 'YYYY');

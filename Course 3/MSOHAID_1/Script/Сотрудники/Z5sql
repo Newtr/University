@@ -1,0 +1,10 @@
+-- Создание индекса для атрибута
+CREATE INDEX idx_ФИО_СОТРУДНИКА ON Сотрудники_obj (ФИО_СОТРУДНИКА);
+
+-- Создание индекса для метода
+CREATE INDEX Индекс_по_ID_Сотрудника ON Сотрудники_obj(СОТРУДНИК_ДАННЫЕ.get_role());
+
+SELECT index_name 
+FROM all_indexes 
+WHERE table_name = 'СОТРУДНИКИ_OBJ';
+

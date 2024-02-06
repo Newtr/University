@@ -1,0 +1,41 @@
+-- Создание нового пользователя (если он не существует)
+CREATE USER C##Tester IDENTIFIED BY password123
+DEFAULT TABLESPACE users
+TEMPORARY TABLESPACE temp
+QUOTA UNLIMITED ON users;
+
+-- Предоставление привилегий
+GRANT CONNECT, RESOURCE TO C##Tester;
+
+-- Подключение к новой схеме
+--CONNECT C##Tester/password123;
+CONNECT SYS as SYSDBA;
+SHOW USER;
+
+SELECT value FROM v$parameter WHERE name = 'common_user_prefix';
+SELECT * FROM ALL_USERS;
+
+
+CREATE USER C##Kaisa IDENTIFIED BY KaisaPassword;
+GRANT DBA TO C##Kaisa;
+CONNECT C##Kaisa/KaisaPassword;
+SELECT USER from DUAl;
+SHOW USER;
+
+
+BEGIN
+    UPDATE_СОТРУДНИК(
+        p_ИД_Сотрудника => 24, -- Замените на соответствующее значение
+        p_ФИО => 'Николай Васильевич Гоголь', -- Замените на соответствующее значение
+        p_Контракт => 14, -- Замените на соответствующее значение
+        p_Роль => 'Дизайнер', -- Замените на соответствующее значение
+        p_Дата_Рождения => TO_DATE('1990-01-01', 'YYYY-MM-DD'), -- Замените на соответствующее значение
+        p_Пол => 'М', -- Замените на соответствующее значение
+        p_Отдел => 'Отдел разработки' -- Замените на соответствующее значение
+    );
+EXCEPTION
+    WHEN OTHERS THEN
+        DBMS_OUTPUT.PUT_LINE('Ошибка: ' || SQLERRM);
+END;
+/
+

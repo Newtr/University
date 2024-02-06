@@ -1,0 +1,24 @@
+WITH interviews_this_year AS (
+  SELECT 
+    s.тхн_янрпсдмхйю,
+    EXTRACT(MONTH FROM c.дюрю_янаеяеднбюмхъ) AS леяъж,
+    COUNT(*) AS interviews_count
+  FROM 
+    ЯНАЕЯЕДНБЮМХЪ c
+  JOIN ЯНРПСДМХЙХ s ON c.янрпсдмхй_опхмхлюбьхи_янаеяеднбюмхе = s.тхн_янрпсдмхйю
+  WHERE 
+    EXTRACT(YEAR FROM c.дюрю_янаеяеднбюмхъ) = EXTRACT(YEAR FROM CURRENT_DATE)
+  GROUP BY 
+    s.тхн_янрпсдмхйю, EXTRACT(MONTH FROM c.дюрю_янаеяеднбюмхъ)
+)
+SELECT *
+FROM interviews_this_year
+MODEL
+  DIMENSION BY (тхн_янрпсдмхйю, леяъж)
+  MEASURES (interviews_count, 0 AS next_year_interviews)
+  RULES (
+    next_year_interviews[ANY, ANY] = CASE
+      WHEN interviews_count[CV(тхн_янрпсдмхйю), CV(леяъж)] = MAX(interviews_count)[CV(тхн_янрпсдмхйю), ANY] THEN interviews_count[CV(тхн_янрпсдмхйю), CV(леяъж)]
+      ELSE interviews_count[CV(тхн_янрпсдмхйю), CV(леяъж)] + 1
+    END
+  )

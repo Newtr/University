@@ -1,0 +1,19 @@
+CONNECT C##Tester/password123;
+
+CREATE OR REPLACE TRIGGER CheckEmployeeBeforeUpdate
+BEFORE UPDATE ON СОТРУДНИКИ
+FOR EACH ROW
+DECLARE
+    v_EmployeeCount NUMBER;
+BEGIN
+    -- Проверка наличия сотрудника перед обновлением
+    SELECT COUNT(*) INTO v_EmployeeCount
+    FROM СОТРУДНИКИ
+    WHERE ИДЕНТИФИКАТОР_СОТРУДНИКА = :NEW.ИДЕНТИФИКАТОР_СОТРУДНИКА;
+
+    IF v_EmployeeCount = 0 THEN
+        -- Сотрудник не существует, вызываем ошибку
+        RAISE_APPLICATION_ERROR(-20001, 'Сотрудник с указанным идентификатором не существует.');
+    END IF;
+END;
+/

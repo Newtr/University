@@ -1,0 +1,54 @@
+--Последовательности
+SELECT SEQ_ВАКАНСИЯ.NEXTVAL FROM dual;
+SELECT SEQ_ТД.NEXTVAL FROM dual;
+SELECT SEQ_ОТДЕЛ.NEXTVAL FROM dual;
+
+--Индексы
+SELECT 
+    ind.index_name AS IndexName,
+    ind.table_name AS TableName,
+    cols.column_name AS ColumnName
+FROM 
+    user_indexes ind
+    INNER JOIN user_ind_columns cols ON ind.index_name = cols.index_name
+WHERE 
+    ind.table_name = 'СОТРУДНИКИ' -- имя таблицы
+ORDER BY 
+    ind.index_name, cols.column_position;
+    
+--Процедуры
+BEGIN
+    DELETE_СОТРУДНИК(37);
+END;
+/
+
+BEGIN
+    UPDATE_СОТРУДНИК(36, 'Виктор Петрович Некрасов', 8, 'Разработчик', TO_DATE('1992-10-15', 'YYYY-MM-DD'), 'Мужик', 'Отдел разработки');
+END;
+/
+
+--Функции
+DECLARE
+    v_Result NUMBER;
+BEGIN
+    v_Result := GetContractIdByEmployeeName('Павлова Лариса Ивановна'); --  ФИО сотрудника
+    DBMS_OUTPUT.PUT_LINE('Идентификатор трудового договора: ' || v_Result);
+END;
+/
+
+DECLARE
+    v_TeamName VARCHAR2(255);
+BEGIN
+    v_TeamName := GetTeamNameByProductId(2); -- идентификатор продукта
+    DBMS_OUTPUT.PUT_LINE('Название команды: ' || v_TeamName);
+END;
+/
+
+DECLARE
+    v_EmployeeList VARCHAR2(4000);
+BEGIN
+    v_EmployeeList := GetEmployeesByDepartment('Отдел разработки'); -- Замените на фактическое название отдела
+    DBMS_OUTPUT.PUT_LINE('Сотрудники в отделе: ' || v_EmployeeList);
+END;
+/
+
