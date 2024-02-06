@@ -1,0 +1,10 @@
+eventloop браузер
+
+postman 4 
+
+с помошью form muptipart
+Xml формат какой
+keepalivetimeout
+группы заголовков
+connection
+
