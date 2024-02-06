@@ -1,0 +1,14 @@
+﻿  CMatrix.cpp
+  main.cpp
+  _WIN32_WINNT not defined. Defaulting to _WIN32_WINNT_MAXVER (see WinSDKVer.h)
+D:\Документы БГТУ\2.ОКГ\7_Lab\Lab_07\Lab-6\LibSurface.h(160,20): warning C4018: <: несоответствие типов со знаком и без знака
+D:\Документы БГТУ\2.ОКГ\7_Lab\Lab_07\Lab-6\LibSurface.h(163,21): warning C4018: <: несоответствие типов со знаком и без знака
+D:\Документы БГТУ\2.ОКГ\7_Lab\Lab_07\Lab-6\LibSurface.h(219,20): warning C4018: <: несоответствие типов со знаком и без знака
+D:\Документы БГТУ\2.ОКГ\7_Lab\Lab_07\Lab-6\LibSurface.h(222,21): warning C4018: <: несоответствие типов со знаком и без знака
+D:\Документы БГТУ\2.ОКГ\7_Lab\Lab_07\Lab-6\LibSurface.h(249,20): warning C4018: <: несоответствие типов со знаком и без знака
+D:\Документы БГТУ\2.ОКГ\7_Lab\Lab_07\Lab-6\LibSurface.h(252,21): warning C4018: <: несоответствие типов со знаком и без знака
+D:\Документы БГТУ\2.ОКГ\7_Lab\Lab_07\Lab-6\LibSurface.h(271,6): warning C4101: k: неиспользованная локальная переменная
+D:\Документы БГТУ\2.ОКГ\7_Lab\Lab_07\Lab-6\LibSurface.h(271,9): warning C4101: d: неиспользованная локальная переменная
+  Создание кода...
+D:\Документы БГТУ\2.ОКГ\7_Lab\Lab_07\Lab-6\LibSurface.h(202): warning C4715: CPlot3D::GetNumberRegion: значение возвращается не при всех путях выполнения
+  Lab-6.vcxproj -> D:\Документы БГТУ\2.ОКГ\7_Lab\Lab_07\Debug\lab7.exe
