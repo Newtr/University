@@ -1,0 +1,14 @@
+C:\University\Zinis\Lab1\Lab1\Lab1\bin\Debug\net8.0\Lab1.exe
+C:\University\Zinis\Lab1\Lab1\Lab1\bin\Debug\net8.0\Lab1.deps.json
+C:\University\Zinis\Lab1\Lab1\Lab1\bin\Debug\net8.0\Lab1.runtimeconfig.json
+C:\University\Zinis\Lab1\Lab1\Lab1\bin\Debug\net8.0\Lab1.dll
+C:\University\Zinis\Lab1\Lab1\Lab1\bin\Debug\net8.0\Lab1.pdb
+C:\University\Zinis\Lab1\Lab1\Lab1\obj\Debug\net8.0\Lab1.GeneratedMSBuildEditorConfig.editorconfig
+C:\University\Zinis\Lab1\Lab1\Lab1\obj\Debug\net8.0\Lab1.AssemblyInfoInputs.cache
+C:\University\Zinis\Lab1\Lab1\Lab1\obj\Debug\net8.0\Lab1.AssemblyInfo.cs
+C:\University\Zinis\Lab1\Lab1\Lab1\obj\Debug\net8.0\Lab1.csproj.CoreCompileInputs.cache
+C:\University\Zinis\Lab1\Lab1\Lab1\obj\Debug\net8.0\Lab1.dll
+C:\University\Zinis\Lab1\Lab1\Lab1\obj\Debug\net8.0\refint\Lab1.dll
+C:\University\Zinis\Lab1\Lab1\Lab1\obj\Debug\net8.0\Lab1.pdb
+C:\University\Zinis\Lab1\Lab1\Lab1\obj\Debug\net8.0\Lab1.genruntimeconfig.cache
+C:\University\Zinis\Lab1\Lab1\Lab1\obj\Debug\net8.0\ref\Lab1.dll
