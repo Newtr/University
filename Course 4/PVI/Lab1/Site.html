@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTTP Handler Demo</title>
+</head>
+<body>
+    <h1>HTTP Handler Test</h1>
+
+    <button onclick="sendGet()">GET</button>
+    <button onclick="sendPost()">POST</button>
+    <button onclick="sendPut()">PUT</button>
+    <button onclick="sendDelete()">DELETE</button>
+
+    <div id="response"></div>
+
+    <script>
+        async function sendGet() {
+            const response = await fetch('/yourInitials.XXX');
+            const data = await response.json();
+            document.getElementById('response').innerText = JSON.stringify(data);
+        }
+
+        async function sendPost() {
+            const result = prompt("Enter new RESULT value:");
+            const formData = new URLSearchParams();
+            formData.append("RESULT", result);
+
+            const response = await fetch('/yourInitials.XXX', {
+                method: 'POST',
+                body: formData
+            });
+            document.getElementById('response').innerText = await response.text();
+        }
+
+        async function sendPut() {
+            const addValue = prompt("Enter value to add to stack:");
+            const response = await fetch(`/yourInitials.XXX?ADD=${addValue}`, {
+                method: 'PUT'
+            });
+            document.getElementById('response').innerText = await response.text();
+        }
+
+        async function sendDelete() {
+            const response = await fetch('/yourInitials.XXX', {
+                method: 'DELETE'
+            });
+            document.getElementById('response').innerText = await response.text();
+        }
+    </script>
+</body>
+</html>

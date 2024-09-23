@@ -1,0 +1,15 @@
+D:\Work\University\Lab1\Lab1\Lab1\obj\Release\net8.0\PubTmp\Out\Lab1.exe
+D:\Work\University\Lab1\Lab1\Lab1\obj\Release\net8.0\PubTmp\Out\web.config
+D:\Work\University\Lab1\Lab1\Lab1\obj\Release\net8.0\PubTmp\Out\appsettings.Development.json
+D:\Work\University\Lab1\Lab1\Lab1\obj\Release\net8.0\PubTmp\Out\appsettings.json
+D:\Work\University\Lab1\Lab1\Lab1\obj\Release\net8.0\PubTmp\Out\Lab1.dll
+D:\Work\University\Lab1\Lab1\Lab1\obj\Release\net8.0\PubTmp\Out\Lab1.deps.json
+D:\Work\University\Lab1\Lab1\Lab1\obj\Release\net8.0\PubTmp\Out\Lab1.runtimeconfig.json
+D:\Work\University\Lab1\Lab1\Lab1\obj\Release\net8.0\PubTmp\Out\Lab1.pdb
+D:\Work\University\Lab1\Lab1\Lab1\obj\Release\net8.0\PubTmp\Out\Newtonsoft.Json.dll
+D:\Work\University\Lab1\Lab1\Lab1\obj\Release\net8.0\PubTmp\Out\ServiceStack.dll
+D:\Work\University\Lab1\Lab1\Lab1\obj\Release\net8.0\PubTmp\Out\ServiceStack.Client.dll
+D:\Work\University\Lab1\Lab1\Lab1\obj\Release\net8.0\PubTmp\Out\ServiceStack.Common.dll
+D:\Work\University\Lab1\Lab1\Lab1\obj\Release\net8.0\PubTmp\Out\ServiceStack.Interfaces.dll
+D:\Work\University\Lab1\Lab1\Lab1\obj\Release\net8.0\PubTmp\Out\ServiceStack.Text.dll
+D:\Work\University\Lab1\Lab1\Lab1\obj\Release\net8.0\PubTmp\Out\System.Security.Permissions.dll
