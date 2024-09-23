@@ -1,0 +1,1 @@
+Error: EXDEV: cross-device link not permitted, rename 'C:\Users\user\AppData\Local\Temp\tmQZwQqWfGfpLT3HdyN7fu_n.png' -> 'D:\University\Projects\Kursach\Node\food_delivery_node\public\img\menu\202405200542054258QjDgYWuXO.png'

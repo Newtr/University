@@ -1,0 +1,10 @@
+TypeError: route.controller is not a function
+    at D:\University\Projects\Kursach\Node\food_delivery_node\app.js:49:11
+    at Array.forEach (<anonymous>)
+    at Object.<anonymous> (D:\University\Projects\Kursach\Node\food_delivery_node\app.js:46:33)
+    at Module._compile (node:internal/modules/cjs/loader:1434:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1518:10)
+    at Module.load (node:internal/modules/cjs/loader:1249:32)
+    at Module._load (node:internal/modules/cjs/loader:1065:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:158:12)
+    at node:internal/main/run_main_module:30:49

@@ -1,0 +1,11 @@
+ReferenceError: msg_itemAddedToCart is not defined
+    at D:\University\Projects\Kursach\Node\food_delivery_node\controllers\user_controller.js:80:82
+    at Query.<anonymous> (D:\University\Projects\Kursach\Node\food_delivery_node\helpers\db_helpers.js:66:24)
+    at Query.<anonymous> (D:\University\Projects\Kursach\Node\food_delivery_node\node_modules\mysql\lib\Connection.js:526:10)
+    at Query._callback (D:\University\Projects\Kursach\Node\food_delivery_node\node_modules\mysql\lib\Connection.js:488:16)
+    at Sequence.end (D:\University\Projects\Kursach\Node\food_delivery_node\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Query._handleFinalResultPacket (D:\University\Projects\Kursach\Node\food_delivery_node\node_modules\mysql\lib\protocol\sequences\Query.js:149:8)
+    at Query.OkPacket (D:\University\Projects\Kursach\Node\food_delivery_node\node_modules\mysql\lib\protocol\sequences\Query.js:74:10)
+    at Protocol._parsePacket (D:\University\Projects\Kursach\Node\food_delivery_node\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\University\Projects\Kursach\Node\food_delivery_node\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\University\Projects\Kursach\Node\food_delivery_node\node_modules\mysql\lib\protocol\Parser.js:43:10)

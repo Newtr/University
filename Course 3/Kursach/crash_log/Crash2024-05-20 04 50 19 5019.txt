@@ -1,0 +1,22 @@
+Error: ER_BAD_FIELD_ERROR: Unknown column 'created_date' in 'field list'
+    at Sequence._packetToError (D:\University\Projects\Kursach\Node\food_delivery_node\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\University\Projects\Kursach\Node\food_delivery_node\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\University\Projects\Kursach\Node\food_delivery_node\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\University\Projects\Kursach\Node\food_delivery_node\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\University\Projects\Kursach\Node\food_delivery_node\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\University\Projects\Kursach\Node\food_delivery_node\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\University\Projects\Kursach\Node\food_delivery_node\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\University\Projects\Kursach\Node\food_delivery_node\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:520:28)
+    at addChunk (node:internal/streams/readable:559:12)
+    --------------------
+    at Protocol._enqueue (D:\University\Projects\Kursach\Node\food_delivery_node\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Connection.query (D:\University\Projects\Kursach\Node\food_delivery_node\node_modules\mysql\lib\Connection.js:198:25)
+    at Object.query (D:\University\Projects\Kursach\Node\food_delivery_node\helpers\db_helpers.js:65:16)
+    at D:\University\Projects\Kursach\Node\food_delivery_node\controllers\admin_controller.js:461:20
+    at Object.CheckParameterValid (D:\University\Projects\Kursach\Node\food_delivery_node\helpers\helpers.js:69:20)
+    at D:\University\Projects\Kursach\Node\food_delivery_node\controllers\admin_controller.js:460:20
+    at D:\University\Projects\Kursach\Node\food_delivery_node\controllers\admin_controller.js:1205:32
+    at Query.<anonymous> (D:\University\Projects\Kursach\Node\food_delivery_node\helpers\db_helpers.js:66:24)
+    at Query.<anonymous> (D:\University\Projects\Kursach\Node\food_delivery_node\node_modules\mysql\lib\Connection.js:526:10)
+    at Query._callback (D:\University\Projects\Kursach\Node\food_delivery_node\node_modules\mysql\lib\Connection.js:488:16)
