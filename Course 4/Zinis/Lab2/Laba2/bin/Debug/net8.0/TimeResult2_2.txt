@@ -1,0 +1,2 @@
+Average Encryption Time: 2 ms
+Average Decryption Time: 2 ms

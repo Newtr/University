@@ -1,0 +1,14 @@
+D:\Work\University\Zinis\Lab2\Laba2\bin\Debug\net8.0\Laba2.exe
+D:\Work\University\Zinis\Lab2\Laba2\bin\Debug\net8.0\Laba2.deps.json
+D:\Work\University\Zinis\Lab2\Laba2\bin\Debug\net8.0\Laba2.runtimeconfig.json
+D:\Work\University\Zinis\Lab2\Laba2\bin\Debug\net8.0\Laba2.dll
+D:\Work\University\Zinis\Lab2\Laba2\bin\Debug\net8.0\Laba2.pdb
+D:\Work\University\Zinis\Lab2\Laba2\obj\Debug\net8.0\Laba2.GeneratedMSBuildEditorConfig.editorconfig
+D:\Work\University\Zinis\Lab2\Laba2\obj\Debug\net8.0\Laba2.AssemblyInfoInputs.cache
+D:\Work\University\Zinis\Lab2\Laba2\obj\Debug\net8.0\Laba2.AssemblyInfo.cs
+D:\Work\University\Zinis\Lab2\Laba2\obj\Debug\net8.0\Laba2.csproj.CoreCompileInputs.cache
+D:\Work\University\Zinis\Lab2\Laba2\obj\Debug\net8.0\Laba2.dll
+D:\Work\University\Zinis\Lab2\Laba2\obj\Debug\net8.0\refint\Laba2.dll
+D:\Work\University\Zinis\Lab2\Laba2\obj\Debug\net8.0\Laba2.pdb
+D:\Work\University\Zinis\Lab2\Laba2\obj\Debug\net8.0\Laba2.genruntimeconfig.cache
+D:\Work\University\Zinis\Lab2\Laba2\obj\Debug\net8.0\ref\Laba2.dll
