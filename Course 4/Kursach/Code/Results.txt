@@ -1,0 +1,40 @@
+Test 1
+Running ChaCha20 Analysis...
+ChaCha20 Encrypt Time: 0.01001590 seconds
+ChaCha20 Decrypt Time: 0.00003770 seconds
+Running Twofish Analysis...
+Twofish Encrypt Time: 0.00254570 seconds
+Twofish Decrypt Time: 0.00267700 seconds
+Decryption Test: PASSED
+Test 2
+Running ChaCha20 Analysis...
+ChaCha20 Encrypt Time: 0.01010880 seconds
+ChaCha20 Decrypt Time: 0.00003610 seconds
+Running Twofish Analysis...
+Twofish Encrypt Time: 0.00444800 seconds
+Twofish Decrypt Time: 0.00447450 seconds
+Decryption Test: PASSED
+Test 3
+Running ChaCha20 Analysis...
+ChaCha20 Encrypt Time: 0.01013810 seconds
+ChaCha20 Decrypt Time: 0.00005490 seconds
+Running Twofish Analysis...
+Twofish Encrypt Time: 0.00752030 seconds
+Twofish Decrypt Time: 0.00774440 seconds
+Decryption Test: PASSED
+Test 4
+Running ChaCha20 Analysis...
+ChaCha20 Encrypt Time: 0.01017570 seconds
+ChaCha20 Decrypt Time: 0.00006400 seconds
+Running Twofish Analysis...
+Twofish Encrypt Time: 0.00977670 seconds
+Twofish Decrypt Time: 0.00966420 seconds
+Decryption Test: PASSED
+Test 5
+Running ChaCha20 Analysis...
+ChaCha20 Encrypt Time: 0.01020300 seconds
+ChaCha20 Decrypt Time: 0.00010480 seconds
+Running Twofish Analysis...
+Twofish Encrypt Time: 0.02425730 seconds
+Twofish Decrypt Time: 0.02423590 seconds
+Decryption Test: PASSED
