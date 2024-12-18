@@ -38,3 +38,19 @@ Running Twofish Analysis...
 Twofish Encrypt Time: 0.02425730 seconds
 Twofish Decrypt Time: 0.02423590 seconds
 Decryption Test: PASSED
+Test 6
+Running ChaCha20 Analysis...
+ChaCha20 Encrypt Time: 0.08313670 seconds
+ChaCha20 Decrypt Time: 0.00010870 seconds
+Running Twofish Analysis...
+Twofish Encrypt Time: 0.02409850 seconds
+Twofish Decrypt Time: 0.02425530 seconds
+Decryption Test: PASSED
+Test 7
+Running ChaCha20 Analysis...
+ChaCha20 Encrypt Time: 0.00014950 seconds
+ChaCha20 Decrypt Time: 0.00010420 seconds
+Running Twofish Analysis...
+Twofish Encrypt Time: 0.02486520 seconds
+Twofish Decrypt Time: 0.02360690 seconds
+Decryption Test: PASSED
